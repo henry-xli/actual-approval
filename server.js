@@ -195,6 +195,7 @@ async function fetchCongressGovVotes(chamber) {
   if (!congressGovKey) return [];
   const listUrl = `https://api.congress.gov/v3/roll-call-vote/${propublicaCongress}/${chamber}?api_key=${congressGovKey}`;
   const listRes = await fetch(listUrl, { headers: { 'user-agent': 'actualapproval.com votes (+https://github.com/actualapproval)' } });
+  if (listRes.status === 404) return [];
   if (!listRes.ok) throw new Error(`congress.gov list ${chamber} ${listRes.status}`);
   const listBody = await listRes.json();
   const items = listBody?.rollCallVotes || listBody?.results?.votes || [];
@@ -204,6 +205,7 @@ async function fetchCongressGovVotes(chamber) {
     if (!number) return null;
     const detailUrl = `https://api.congress.gov/v3/roll-call-vote/${propublicaCongress}/${chamber}/${number}?api_key=${congressGovKey}`;
     const detailRes = await fetch(detailUrl, { headers: { 'user-agent': 'actualapproval.com votes (+https://github.com/actualapproval)' } });
+    if (detailRes.status === 404) return null;
     if (!detailRes.ok) return null;
     const detail = await detailRes.json();
     detail.rollCallNumber = number;
@@ -338,24 +340,33 @@ function tallyVotes(votes) {
 async function fetchAlignment() {
   try {
     if (congressGovKey) {
-      const [houseVotes, senateVotes] = await Promise.all([
-        fetchCongressGovVotes('house'),
-        fetchCongressGovVotes('senate'),
-      ]);
-      return {
-        house: tallyVotes(houseVotes),
-        senate: tallyVotes(senateVotes),
-      };
+      try {
+        const [houseVotes, senateVotes] = await Promise.all([
+          fetchCongressGovVotes('house'),
+          fetchCongressGovVotes('senate'),
+        ]);
+        const houseTallied = tallyVotes(houseVotes);
+        const senateTallied = tallyVotes(senateVotes);
+        if (houseTallied.length || senateTallied.length) {
+          return { house: houseTallied, senate: senateTallied };
+        }
+      } catch (err) {
+        console.warn('congress.gov alignment failed, will try fallback', err.message || err);
+      }
     }
     if (propublicaKey) {
-      const [houseVotes, senateVotes] = await Promise.all([
-        fetchChamberVotesPropublica('house'),
-        fetchChamberVotesPropublica('senate'),
-      ]);
-      return {
-        house: tallyVotes(houseVotes),
-        senate: tallyVotes(senateVotes),
-      };
+      try {
+        const [houseVotes, senateVotes] = await Promise.all([
+          fetchChamberVotesPropublica('house'),
+          fetchChamberVotesPropublica('senate'),
+        ]);
+        return {
+          house: tallyVotes(houseVotes),
+          senate: tallyVotes(senateVotes),
+        };
+      } catch (err) {
+        console.warn('propublica alignment failed', err.message || err);
+      }
     }
   } catch (err) {
     console.error('alignment fetch failed', err);
@@ -415,6 +426,25 @@ function mergeAlignment(rosterList, alignments) {
       flaggedVotes: hit.flaggedVotes || member.flaggedVotes,
     };
   });
+}
+
+function computeStats({ bills, house, senate }) {
+  const alignValues = (list) => (list || []).map((m) => (Number.isFinite(m.alignment) ? m.alignment : null)).filter((v) => v !== null);
+  const avg = (values) => {
+    if (!values.length) return null;
+    const sum = values.reduce((a, b) => a + b, 0);
+    return sum / values.length;
+  };
+
+  const houseAlign = alignValues(house);
+  const senateAlign = alignValues(senate);
+  const allAlign = [...houseAlign, ...senateAlign];
+
+  return {
+    billsTracked: Array.isArray(bills) ? bills.length : 0,
+    averageAlignment: avg(allAlign),
+    congressAlignment: avg(allAlign),
+  };
 }
 
 async function fetchRosterRemote() {
