@@ -1,0 +1,17 @@
+{
+  "name": "Donald J. Trump",
+  "alignment": null,
+  "approval": null,
+  "issues": {
+    "economy": null,
+    "inflation": null,
+    "immigration": null
+  },
+  "sources": [
+    "https://www.realclearpolitics.com/epolls/other/president_trump_job_approval-6179.html",
+    "https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy.html",
+    "https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation.html",
+    "https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration.html"
+  ],
+  "updatedAt": null
+}

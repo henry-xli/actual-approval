@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>actualapproval.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="top-bar">
+      <div class="brand">
+        <button class="logo-button" aria-label="Go home">
+          <div class="logo">AA</div>
+        </button>
+        <div class="brand-text">
+          <div class="brand-name">actualapproval.com</div>
+          <div class="brand-tag">Do your representatives align with you?</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <label class="theme-switch" aria-label="Theme toggle">
+          <span class="theme-label">Light</span>
+          <input type="checkbox" id="theme-toggle" />
+          <span class="switch-rail"><span class="switch-thumb"></span></span>
+          <span class="theme-label">Dark</span>
+        </label>
+        <a class="donation" href="https://buymeacoffee.com/pigeonflare" target="_blank" rel="noreferrer">Buy me a coffee</a>
+      </div>
+    </header>
+
+    <main id="app">
+      <section class="route active" data-route="home">
+        <div class="hero shell">
+          <div class="hero-copy">
+            <h1>Do your representatives align with you?</h1>
+            <p>Search by name or ZIP to see how closely your representatives align with broadly supported policies.</p>
+            <form id="search-form" class="search-form">
+              <input type="text" id="input-name" placeholder="Name" aria-label="Name" />
+              <input type="text" id="input-zip" placeholder="ZIP" aria-label="ZIP" />
+              <button type="submit">Search</button>
+            </form>
+            <div id="search-error" class="error-text" aria-live="polite"></div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <div class="label">Popular bills tracked</div>
+                <div class="value" id="stat-bills">—</div>
+              </div>
+              <div class="stat-card">
+                <div class="label">Average alignment</div>
+                <div class="value" id="stat-alignment">—</div>
+              </div>
+            </div>
+          </div>
+          <img class="hero-map-img" src="/images/political_map.png" alt="political map" />
+        </div>
+      </section>
+
+      <section class="route" data-route="president">
+        <div class="section-header">
+          <h2>President</h2>
+          <p>Combines popular policy alignment, approval, and issue ratings (economy, inflation, immigration).</p>
+        </div>
+        <div class="card president-card">
+          <div class="card-header">
+            <div>
+              <div class="president-title">
+                <h3 id="president-name">Loading…</h3>
+                <span id="president-party" class="party-badge party-r">R</span>
+              </div>
+              <div class="subtext" id="president-issue">Economy • Inflation • Immigration</div>
+            </div>
+            <div class="align-block">
+              <div class="align-label">Alignment</div>
+              <div class="align-score" id="president-score">—</div>
+              <div class="key-votes" id="president-keyvotes">—/— executive orders</div>
+            </div>
+          </div>
+          <div class="metrics" id="president-metrics">
+            <div class="metric">
+              <div class="metric-label">Economy</div>
+              <div class="metric-value" id="president-economy">—</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Inflation</div>
+              <div class="metric-value" id="president-inflation">—</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Immigration</div>
+              <div class="metric-value" id="president-immigration">—</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Overall approval</div>
+              <div class="metric-value" id="president-approval">—</div>
+            </div>
+          </div>
+          <div class="sources" id="president-sources"></div>
+        </div>
+      </section>
+
+      <section class="route" data-route="house">
+        <div class="section-header">
+          <h2>House</h2>
+          <p>Members ranked by share of votes aligned with broadly supported policies.</p>
+          <div class="section-count" id="house-count">Showing 0 of 0 entries</div>
+        </div>
+        <div class="filter-bar" id="house-filters">
+          <form id="house-search" class="inline-search">
+            <input type="text" id="house-input-name" placeholder="Name" aria-label="House name" />
+            <input type="text" id="house-input-zip" placeholder="ZIP" aria-label="House ZIP" />
+            <button type="submit">Search</button>
+          </form>
+          <label>Party
+            <select id="house-party">
+              <option value="all">All</option>
+              <option value="D">Democrat</option>
+              <option value="R">Republican</option>
+              <option value="I">Independent</option>
+            </select>
+          </label>
+          <label>Sort
+            <select id="house-sort">
+              <option value="name">Alphabetical</option>
+              <option value="align-desc">Alignment high → low</option>
+              <option value="align-asc">Alignment low → high</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid" id="house-grid"></div>
+      </section>
+
+      <section class="route" data-route="senate">
+        <div class="section-header">
+          <h2>Senate</h2>
+          <p>Members ranked by share of votes aligned with broadly supported policies.</p>
+          <div class="section-count" id="senate-count">Showing 0 of 0 entries</div>
+        </div>
+        <div class="filter-bar" id="senate-filters">
+          <form id="senate-search" class="inline-search">
+            <input type="text" id="senate-input-name" placeholder="Name" aria-label="Senate name" />
+            <input type="text" id="senate-input-zip" placeholder="ZIP" aria-label="Senate ZIP" />
+            <button type="submit">Search</button>
+          </form>
+          <label>Party
+            <select id="senate-party">
+              <option value="all">All</option>
+              <option value="D">Democrat</option>
+              <option value="R">Republican</option>
+              <option value="I">Independent</option>
+            </select>
+          </label>
+          <label>Sort
+            <select id="senate-sort">
+              <option value="name">Alphabetical</option>
+              <option value="align-desc">Alignment high → low</option>
+              <option value="align-asc">Alignment low → high</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid" id="senate-grid"></div>
+      </section>
+
+      <section class="route" data-route="results">
+        <div class="section-header">
+          <h2>Results</h2>
+          <p>Matches across President, House, and Senate.</p>
+        </div>
+        <div class="results-stack">
+          <div class="results-block">
+            <h3>President</h3>
+            <div id="results-president"></div>
+          </div>
+          <div class="results-block">
+            <h3>House</h3>
+            <div class="section-count" id="results-house-count"></div>
+            <div id="results-house" class="grid"></div>
+          </div>
+          <div class="results-block">
+            <h3>Senate</h3>
+            <div class="section-count" id="results-senate-count"></div>
+            <div id="results-senate" class="grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="route" data-route="about">
+        <div class="section-header">
+          <h2>About</h2>
+        </div>
+        <div class="card">
+          <p>Made by Henry Li (pigeonflare@gmail.com)</p>
+          <h3>Introduction</h3>
+          <p>
+            Universal background checks. Strengthened medicare. Legalizing weed. What do these policies have in common? All of them boast 65%+ support among the public. And all of them get shot down in Congress. Politicians point fingers at each other, but agreement on these issues should transcend partisanship. The solution is simple. Let’s shine a light on who’s really responsible for shutting down these common-sense policies, and vote them out. 
+          </p>
+          <h3>Methodology</h3>
+          <p>
+            I compiled a list of common-sense bills from the last 4 years that are widely favorable among Americans (>65%) yet failed to pass Congress. Then, I cross-referenced those with each Congress member's voted-on bills, to produce a final percentage of critical votes where they ultimately aligned themselves with the people. Judging the president is trickier, since they can get their agenda done through Congress or by executive order. Therefore, in addition to a similarly-compiled percentage reflecting the common-sense popularity of executive orders, the president will be judged by a popular vote on how well they addressed the issues that got them elected. 
+          </p>
+          <h3>Data sources</h3>
+          <ul>
+            <li>Congress.gov roll call votes</li>
+            <li>Public polling for issue approvals (e.g., RealClearPolling)</li>
+            <li>Gemini-assisted popular policy catalog (&gt;65% support)</li>
+          </ul>
+          <div class="note">
+            Pipeline actions are stubbed in this static build; wire server routes and API keys to activate live data.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button data-nav="home" class="active" aria-label="Home">
+        <img class="nav-icon" src="/images/icons/home.svg" alt="" />
+        Home
+      </button>
+      <button data-nav="president" aria-label="President">
+        <img class="nav-icon" src="/images/icons/president.svg" alt="" />
+        President
+      </button>
+      <button data-nav="house" aria-label="House">
+        <img class="nav-icon" src="/images/icons/house.svg" alt="" />
+        House
+      </button>
+      <button data-nav="senate" aria-label="Senate">
+        <img class="nav-icon" src="/images/icons/senate.svg" alt="" />
+        Senate
+      </button>
+      <button data-nav="about" aria-label="About">
+        <img class="nav-icon" src="/images/icons/about.svg" alt="" />
+        About
+      </button>
+    </nav>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

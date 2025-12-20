@@ -1,0 +1,7 @@
+[
+  {"name": "Rep. Jane Smith", "state": "CA-12", "alignment": 0.78, "votes": {"yes": 7, "total": 9}},
+  {"name": "Rep. Alan Nguyen", "state": "WA-03", "alignment": 0.64, "votes": {"yes": 6, "total": 10}},
+  {"name": "Rep. Priya Patel", "state": "TX-07", "alignment": 0.59, "votes": {"yes": 5, "total": 9}},
+  {"name": "Rep. Luis Rivera", "state": "FL-09", "alignment": 0.48, "votes": {"yes": 4, "total": 9}},
+  {"name": "Rep. Casey Brooks", "state": "OH-15", "alignment": 0.41, "votes": {"yes": 4, "total": 10}}
+]

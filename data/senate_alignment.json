@@ -1,0 +1,7 @@
+[
+  {"name": "Sen. Maria Garcia", "state": "AZ", "alignment": 0.71, "votes": {"yes": 5, "total": 7}},
+  {"name": "Sen. Chris Lee", "state": "GA", "alignment": 0.63, "votes": {"yes": 6, "total": 10}},
+  {"name": "Sen. Jordan Brooks", "state": "ME", "alignment": 0.55, "votes": {"yes": 5, "total": 9}},
+  {"name": "Sen. Aaron Cho", "state": "NV", "alignment": 0.44, "votes": {"yes": 4, "total": 9}},
+  {"name": "Sen. Kate O'Connor", "state": "PA", "alignment": 0.39, "votes": {"yes": 3, "total": 8}}
+]
