@@ -194,7 +194,9 @@ function renderBillsTable() {
     }
     state.bills.forEach((bill, index) => {
         const tr = document.createElement('tr');
-        tr.style.animationDelay = `${index * 0.05}s`;
+        const maxDelaySeconds = 1;
+        const delaySeconds = Math.min(index * 0.05, maxDelaySeconds);
+        tr.style.animationDelay = `${delaySeconds}s`;
         tr.className = 'slide-in';
         const sourceLink = bill.source ? `<a href="${bill.source}" target="_blank" rel="noreferrer">Link</a>` : '—';
         tr.innerHTML = `
