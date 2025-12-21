@@ -1,7 +1,902 @@
 [
-  {"name": "Sen. Maria Garcia", "state": "AZ", "alignment": 0.71, "votes": {"yes": 5, "total": 7}},
-  {"name": "Sen. Chris Lee", "state": "GA", "alignment": 0.63, "votes": {"yes": 6, "total": 10}},
-  {"name": "Sen. Jordan Brooks", "state": "ME", "alignment": 0.55, "votes": {"yes": 5, "total": 9}},
-  {"name": "Sen. Aaron Cho", "state": "NV", "alignment": 0.44, "votes": {"yes": 4, "total": 9}},
-  {"name": "Sen. Kate O'Connor", "state": "PA", "alignment": 0.39, "votes": {"yes": 3, "total": 8}}
+  {
+    "id": "C000127",
+    "name": "Maria Cantwell",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000367",
+    "name": "Amy Klobuchar",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S000033",
+    "name": "Bernard Sanders",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000802",
+    "name": "Sheldon Whitehouse",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001261",
+    "name": "John Barrasso",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000437",
+    "name": "Roger F. Wicker",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001035",
+    "name": "Susan M. Collins",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001056",
+    "name": "John Cornyn",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "D000563",
+    "name": "Richard J. Durbin",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "G000359",
+    "name": "Lindsey Graham",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M000355",
+    "name": "Mitch McConnell",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001176",
+    "name": "Jeff Merkley",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "R000122",
+    "name": "Jack Reed",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "R000584",
+    "name": "James E. Risch",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001181",
+    "name": "Jeanne Shaheen",
+    "alignment": 0.75,
+    "votes": {
+      "yes": 3,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000805",
+    "name": "Mark R. Warner",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "G000555",
+    "name": "Kirsten E. Gillibrand",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001088",
+    "name": "Christopher A. Coons",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001230",
+    "name": "Tammy Baldwin",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001267",
+    "name": "Michael F. Bennet",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001243",
+    "name": "Marsha Blackburn",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001277",
+    "name": "Richard Blumenthal",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001236",
+    "name": "John Boozman",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001047",
+    "name": "Shelley Moore Capito",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001075",
+    "name": "Bill Cassidy",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C000880",
+    "name": "Mike Crapo",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "G000386",
+    "name": "Chuck Grassley",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001046",
+    "name": "Martin Heinrich",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001042",
+    "name": "Mazie K. Hirono",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001061",
+    "name": "John Hoeven",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "J000293",
+    "name": "Ron Johnson",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "L000575",
+    "name": "James Lankford",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "L000577",
+    "name": "Mike Lee",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "L000570",
+    "name": "Ben Ray Luján",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "M000133",
+    "name": "Edward J. Markey",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "M000934",
+    "name": "Jerry Moran",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001153",
+    "name": "Lisa Murkowski",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001169",
+    "name": "Christopher Murphy",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001111",
+    "name": "Patty Murray",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "P000603",
+    "name": "Rand Paul",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "P000595",
+    "name": "Gary C. Peters",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001150",
+    "name": "Adam B. Schiff",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S000148",
+    "name": "Charles E. Schumer",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001184",
+    "name": "Tim Scott",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "T000250",
+    "name": "John Thune",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "V000128",
+    "name": "Chris Van Hollen",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000800",
+    "name": "Peter Welch",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000779",
+    "name": "Ron Wyden",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "Y000064",
+    "name": "Todd Young",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001194",
+    "name": "Brian Schatz",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001095",
+    "name": "Tom Cotton",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "D000622",
+    "name": "Tammy Duckworth",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000817",
+    "name": "Elizabeth Warren",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000383",
+    "name": "Angus S. King, Jr.",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "D000618",
+    "name": "Steve Daines",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001096",
+    "name": "Kevin Cramer",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "F000463",
+    "name": "Deb Fischer",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001190",
+    "name": "Markwayne Mullin",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001098",
+    "name": "Ted Cruz",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000384",
+    "name": "Tim Kaine",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001288",
+    "name": "Cory A. Booker",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "G000574",
+    "name": "Ruben Gallego",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001198",
+    "name": "Dan Sullivan",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "E000295",
+    "name": "Joni Ernst",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "T000476",
+    "name": "Thom Tillis",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "R000605",
+    "name": "Mike Rounds",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000393",
+    "name": "John Kennedy",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001076",
+    "name": "Margaret Wood Hassan",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001113",
+    "name": "Catherine Cortez Masto",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001303",
+    "name": "Lisa Blunt Rochester",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001299",
+    "name": "Jim Banks",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001198",
+    "name": "Roger Marshall",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001305",
+    "name": "Ted Budd",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "R000608",
+    "name": "Jacky Rosen",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "C001114",
+    "name": "John R. Curtis",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001203",
+    "name": "Tina Smith",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001079",
+    "name": "Cindy Hyde-Smith",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001208",
+    "name": "Elissa Slotkin",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000394",
+    "name": "Andy Kim",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001217",
+    "name": "Rick Scott",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001089",
+    "name": "Josh Hawley",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "K000377",
+    "name": "Mark Kelly",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "L000571",
+    "name": "Cynthia M. Lummis",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "T000278",
+    "name": "Tommy Tuberville",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "H000273",
+    "name": "John W. Hickenlooper",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "H000601",
+    "name": "Bill Hagerty",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "P000145",
+    "name": "Alex Padilla",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "O000174",
+    "name": "Jon Ossoff",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "W000790",
+    "name": "Raphael G. Warnock",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "B001319",
+    "name": "Katie Boyd Britt",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001227",
+    "name": "Eric Schmitt",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "F000479",
+    "name": "John Fetterman",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "R000618",
+    "name": "Pete Ricketts",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "A000382",
+    "name": "Angela D. Alsobrooks",
+    "alignment": 1,
+    "votes": {
+      "yes": 4,
+      "total": 4
+    }
+  },
+  {
+    "id": "S001232",
+    "name": "Tim Sheehy",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001242",
+    "name": "Bernie Moreno",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001243",
+    "name": "David McCormick",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "J000312",
+    "name": "James C. Justice",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "H001104",
+    "name": "Jon Husted",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  },
+  {
+    "id": "M001244",
+    "name": "Ashley Moody",
+    "alignment": 0,
+    "votes": {
+      "yes": 0,
+      "total": 4
+    }
+  }
 ]

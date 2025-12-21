@@ -45,7 +45,7 @@
             </form>
             <div id="search-error" class="error-text" aria-live="polite"></div>
             <div class="hero-stats">
-              <div class="stat-card">
+              <div class="stat-card" id="stat-bills-card">
                 <div class="label">Popular bills tracked</div>
                 <div class="value" id="stat-bills">—</div>
               </div>
@@ -57,6 +57,28 @@
           </div>
           <img class="hero-map-img" src="/images/political_map.png" alt="political map" />
         </div>
+
+        <section class="bills-section shell" id="bills-section">
+          <div class="section-header">
+            <h2>Popular bills tracked</h2>
+            <p>High-support legislation the public backs.</p>
+          </div>
+          <div class="card bills-card">
+            <table class="bills-table" aria-label="Popular bills">
+              <thead>
+                <tr>
+                  <th scope="col">Bill</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Support</th>
+                  <th scope="col">Source</th>
+                </tr>
+              </thead>
+              <tbody id="bills-tbody">
+                <tr><td colspan="4">Loading…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </section>
 
       <section class="route" data-route="president">
