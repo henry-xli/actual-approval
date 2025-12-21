@@ -182,22 +182,54 @@ function renderMembers(list, target) {
         const card = document.createElement('div');
         card.className = 'member-card';
         const partyClass = partyClassFor(m.party);
-        const flagged = Array.isArray(m.flaggedVotes) ? m.flaggedVotes.slice(0, 3) : [];
+        const allVotes = Array.isArray(m.flaggedVotes) ? m.flaggedVotes : [];
+        const hasFlagged = allVotes.length > 0;
+        const hasVoteTotals = Number.isFinite(m.votes?.total) && m.votes.total > 0;
+        const initialVotes = hasFlagged ? allVotes.slice(0, 3) : [];
+        const hasVotes = hasFlagged || hasVoteTotals;
+        const hasMore = hasFlagged; // only show see-more when we actually have flagged vote rows
+
         card.innerHTML = `
       <div class="member-header">
         <div>
           <div class="member-name">${m.name}</div>
-                    <div class="member-role">${m.state}</div>
-                    <div class="party-badge ${partyClass}">${m.party || '—'}</div>
+          <div class="member-role">${m.state}</div>
+          <div class="party-badge ${partyClass}">${m.party || '—'}</div>
         </div>
-                <div class="align-block">
-                    <div class="align-label">Alignment</div>
-                    <div class="align-score">${pct(m.alignment)}</div>
-                    <div class="key-votes">${m.votes?.yes ?? '—'}/${m.votes?.total ?? '—'} key votes</div>
-                </div>
+        <div class="align-block">
+          <div class="align-label">Alignment</div>
+          <div class="align-score">${pct(m.alignment)}</div>
+          <div class="key-votes">${m.votes?.yes ?? '—'}/${m.votes?.total ?? '—'} key votes</div>
+        </div>
       </div>
-                ${flagged.length ? `<div class="recent-votes-label">Recent votes</div><ul class="flagged-list">${flagged.map((v) => `<li>${v.date || ''} ${v.question || ''} – ${v.position || ''}</li>`).join('')}</ul>` : ''}
+            <div class="votes-container">
+                ${hasFlagged ? `
+                    <div class="recent-votes-label">Recent votes</div>
+                    <ul class="flagged-list">${initialVotes.map((v) => `<li>${v.date || ''} ${v.question || ''} – <strong>${v.position || ''}</strong></li>`).join('')}</ul>
+                ` : hasVoteTotals ? `
+                    <div class="recent-votes-label">${m.votes.total} key votes recorded; details unavailable.</div>
+                ` : '<div class="recent-votes-label">No key votes available yet.</div>'}
+                ${hasMore ? `
+                    <div class="more-votes" style="display: none;">
+                        <ul class="flagged-list">
+                            ${allVotes.slice(3).map((v) => `<li>${v.date || ''} ${v.question || ''} – <strong>${v.position || ''}</strong></li>`).join('')}
+                        </ul>
+                    </div>
+                    <button class="see-more-btn" style="display: block; visibility: visible;">See more</button>
+                ` : ''}
+            </div>
     `;
+
+        if (hasMore) {
+            const btn = card.querySelector('.see-more-btn');
+            const moreDiv = card.querySelector('.more-votes');
+            btn.addEventListener('click', () => {
+                const isExpanded = moreDiv.style.display === 'block';
+                moreDiv.style.display = isExpanded ? 'none' : 'block';
+                btn.textContent = isExpanded ? 'See more' : 'See less';
+            });
+        }
+
         target.appendChild(card);
     });
 }

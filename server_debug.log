@@ -1,0 +1,203 @@
+actualapproval.com running on http://localhost:3000
+Fetched vote 296: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 379: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 427: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 331: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 367: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 401: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 322: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 292: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 352: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 294: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 323: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 538: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 290: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 351: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 320: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 594: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 350: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 546: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 565: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Fetched vote 539: meta keys [houseRollCallVote,request], members keys [houseRollCallVoteMemberVotes,request]
+Tallying 20 votes
+Vote 0 has 434 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 1 has 439 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 2 has 440 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 3 has 440 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 4 has 434 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 5 has 434 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 6 has 433 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 7 has 439 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 8 has 433 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 9 has 439 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 10 has 439 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 11 has 433 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 12 has 440 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 13 has 434 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 14 has 434 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 15 has 438 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 16 has 438 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 17 has 438 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 18 has 432 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Vote 19 has 438 positions
+Sample position keys: [
+  'bioguideID',
+  'firstName',
+  'lastName',
+  'voteCast',
+  'voteParty',
+  'voteState'
+]
+Tallying 0 votes

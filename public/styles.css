@@ -101,18 +101,9 @@ body {
 .logo-button:hover .logo { transform: translateY(-1px) scale(1.01); box-shadow: var(--lift-shadow); }
 
 .logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent), #5dd5ff);
-  color: #0b1220;
-  font-weight: 700;
-  display: grid;
-  place-items: center;
-  box-shadow: var(--shadow);
-}
-[data-theme='light'] .logo {
-  background: linear-gradient(135deg, #65e2ff, #9af0ff);
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-name { font-weight: 700; letter-spacing: 0.4px; }
@@ -349,6 +340,35 @@ body {
 [data-theme='dark'] .inline-search button:hover { background: #aaf6ff; transform: translateY(-2px); }
 [data-theme='dark'] .bottom-nav button:hover { background: rgba(255,255,255,0.08); transform: translateY(-2px); }
 [data-theme='dark'] .bottom-nav button.active:hover { transform: none; }
+
+.see-more-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.see-more-btn:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.votes-container {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.more-votes {
+  margin-top: 8px;
+}
 
 @media (max-width: 640px) {
   .top-bar { flex-direction: column; align-items: flex-start; gap: 8px; }

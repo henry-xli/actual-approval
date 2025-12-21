@@ -1,18 +1,14 @@
-name,description,support_percent,source,congress,chamber,roll_call,session
-Bipartisan Background Checks Act (H.R. 8), Require background checks for all gun sales, 84, https://www.everytown.org/press/new-polling-voters-are-nearly-united-in-support-for-expanded-background-checks/, 117, house, 75, 1
-Equality Act (H.R. 5), Ban LGBTQ+ discrimination in housing and jobs, 76, https://www.prri.org/research/views-on-lgbtq-rights-in-all-50-states/, 117, house, 39, 1
-Tax Relief for American Families and Workers Act, Expand the federal Child Tax Credit, 74, https://navigatorresearch.org/broad-support-for-bipartisan-tax-agreement/, 118, house, 30, 2
-DISCLOSE Act (S. 4822), Require disclosure of dark money political donors, 90, https://endcitizensunited.org/latest-news/press-releases/new-poll-90-of-voters-support-the-disclose-act/, 117, senate, 346, 2
-George Floyd Justice in Policing Act, Overhaul police accountability and ban chokeholds, 67, https://www.reuters.com/world/us/most-americans-support-police-reforms-public-support-falls-reutersipsos-2021-05-21/, 117, house, 60, 1
-Freedom to Vote Act (S. 2747), National standards for early and mail-in voting, 67, https://navigatorresearch.org/americans-overwhelmingly-support-the-freedom-to-vote-act/, 117, senate, 420, 1
-Women's Health Protection Act (H.R. 12), Codify reproductive rights into federal law, 66, https://navigatorresearch.org/strong-support-for-the-womens-health-protection-act/, 117, house, 295, 1
-Raise the Wage Act (2021), Increase federal minimum wage to $15, 67, https://www.pewresearch.org/short-reads/2021/04/22/most-americans-support-a-15-federal-minimum-wage/, 117, senate, 74, 1
-MORE Act (H.R. 3617), Federally deschedule and legalize marijuana, 70, https://www.pewresearch.org/politics/2024/03/26/most-americans-favor-legalizing-marijuana-for-medical-recreational-use/, 117, house, 107, 2
-FAMILY Act, Establish national paid family/medical leave, 80, https://nationalpartnership.org/news_post/new-poll-finds-strong-small-business-support-for-paid-family-and-medical-leave-policies/,,,
-Universal Pre-K (Build Back Better), No-cost preschool for all 3 and 4-year-olds, 84, https://www.ffyf.org/new-national-poll-shows-overwhelming-bipartisan-support-for-child-care-and-early-learning/, 117, house, 385, 1
-Social Security Fairness Act (H.R. 82), Repeal rules reducing benefits for certain retirees, 80, https://www.narf.org/social-security-fairness-act-poll/, 118, house, 461, 2
-John Lewis Voting Rights Act (H.R. 4), Restore federal oversight of election changes, 70, https://navigatorresearch.org/overwhelming-support-for-the-john-lewis-voting-rights-act/, 117, house, 260, 1
-Medicare Drug Costs Expansion (H.R. 3), Allow Medicare to negotiate more drug prices, 80, https://www.kff.org/health-costs/poll-finding/public-opinion-on-prescription-drugs-and-their-prices/, 117, senate, 325, 2
-ACA Subsidy Extension (2025), Extend enhanced health insurance tax credits, 69, https://www.kff.org/affordable-care-act/poll-finding/kff-health-tracking-poll-may-2024/, 117, senate, 325, 2
-Epstein Files Transparency Act (H.R. 4405), Force disclosure of records related to Jeffrey Epstein, 80, https://www.congress.gov/bill/119th-congress/house-bill/4405,,,
-Treat and Reduce Obesity Act (H.R. 4818), Medicare coverage for obesity treatments/meds, 71, https://www.ncoa.org/article/new-poll-finds-broad-bipartisan-support-for-obesity-care,,,
+Bill Title,Short Description,Last Vote Year,Public Support %,Source
+H.R. 3617,Federal Marijuana Legalization,2022,68%,https://news.gallup.com/poll/356939/support-legal-marijuana-holds-record-high.aspx
+H.R. 8281,Proof of Citizenship to Vote,2024,83%,https://news.gallup.com/poll/652523/americans-endorse-early-voting-voter-verification.aspx
+S. 4445,Protection of Access to Contraception,2024,81%,https://navigatorresearch.org/four-in-five-americans-support-legislation-protecting-access-to-contraception/
+H.R. 8,Universal Background Checks,2021,85%,https://www.pewresearch.org/politics/2015/08/13/continued-bipartisan-support-for-expanded-background-checks-on-gun-sales/
+S. 4361,Border Security & Deporting Violent Felons,2024,88%,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_J22s0t8.pdf#page=6
+H.R. 1280,Police Accountability & Rehab Focus,2021,81%,https://www.fwd.us/news/new-polling-confirms-ongoing-support-for-criminal-justice-reform-ahead-of-november-2024-election/
+S. 2747,National Voting & ID Standards,2021,84%,https://news.gallup.com/poll/652523/americans-endorse-early-voting-voter-verification.aspx
+H.R. 5376,Paid Family & Medical Leave,2021,67%,https://www.pewresearch.org/social-trends/2017/03/23/americans-widely-support-paid-family-and-medical-leave-but-differ-over-specific-policies/
+H.R. 7024,Expanded Child Tax Credit,2025,85%,https://itep.org/child-tax-credit/
+S. 4822,Disclosure of Dark Money Donors,2022,90%,https://navigatorresearch.org/disclose-act-polling
+H.R. 2102,Major Richard Star Act (Veterans Disability),2025,92%,https://www.congress.gov/bill/119th-congress/house-bill/2102
+H.R. 82,Social Security Fairness Act (WEP/GPO),2024,71%,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_J22s0t8.pdf#page=6
+S. 1115,Paycheck Fairness Act (Equal Pay),2025,82%,https://www.congress.gov/bill/119th-congress/senate-bill/1115
