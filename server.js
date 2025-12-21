@@ -38,12 +38,8 @@ const propublicaKey = process.env.PROPUBLICA_API_KEY;
 const congressGovKey = process.env.CONGRESS_GOV_API_KEY;
 const propublicaCongress = process.env.CONGRESS_NUMBER || 118;
 const recentVotesLimit = Number(process.env.RECENT_VOTES_LIMIT || 30);
-const whoIsUrl = 'https://whoismyrepresentative.com/getall_mems.php';
-const zipDistrictUrl = 'https://theunitedstates.io/districts/zip_to_district.csv';
-const sunlightUrl = 'https://congress.sunlightfoundation.com/legislators/locate';
-const sunlightKey = process.env.SUNLIGHT_API_KEY;
-const geminiKey = process.env.GEMINI_API_KEY;
-const geminiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+const zipDistrictFile = path.join(dataDir, 'us_districts.csv');
+const zipDistrictFallbackFile = path.join(dataDir, 'zip-house.csv');
 
 const fallbackPresident = {
   name: 'Donald J. Trump',
@@ -216,96 +212,84 @@ async function fetchCongressGovVotes(chamber) {
 }
 
 function formatDistrictCode(state, district) {
-  const dist = (district ?? '').toString().padStart(2, '0');
+  const distRaw = (district ?? '').toString().trim();
+  const dist = distRaw.padStart(2, '0');
   return `${state}-${dist}`.replace(/-0{2}$/, state);
+}
+
+// Normalize district codes for comparison (handles GA-5 vs GA-05)
+function normalizeDistrictCode(code) {
+  const [state, dist] = (code || '').toUpperCase().split('-');
+  if (!state) return code.toUpperCase();
+  if (!dist) return state; // At-large
+  const distNum = parseInt(dist, 10);
+  if (Number.isNaN(distNum)) return code.toUpperCase();
+  return `${state}-${distNum}`; // Remove leading zeros
+}
+
+function parseZipDistrictCsv(text, format = 'auto') {
+  const lines = text.trim().split(/\r?\n/);
+  const [header, ...rows] = lines;
+  const cols = header.split(',').map((c) => c.toLowerCase().trim());
+  
+  // Detect format: us_districts.csv uses state_abbr,zcta,cd; old format uses zip,state,district
+  const isNewFormat = cols.includes('state_abbr') && cols.includes('zcta') && cols.includes('cd');
+  
+  let iZip, iState, iDistrict;
+  if (isNewFormat) {
+    iZip = cols.indexOf('zcta');
+    iState = cols.indexOf('state_abbr');
+    iDistrict = cols.indexOf('cd');
+  } else {
+    iZip = cols.findIndex((c) => c.includes('zip'));
+    iState = cols.findIndex((c) => c === 'state');
+    iDistrict = cols.findIndex((c) => c.includes('district'));
+  }
+  
+  if (iZip === -1 || iState === -1 || iDistrict === -1) throw new Error('zip csv missing columns');
+  
+  const map = new Map();
+  rows.forEach((line) => {
+    const parts = line.split(',');
+    const zip = (parts[iZip] || '').padStart(5, '0');
+    const state = (parts[iState] || '').toUpperCase();
+    const district = (parts[iDistrict] || '').trim();
+    if (!state || !zip) return;
+    const code = formatDistrictCode(state, district);
+    if (!map.has(zip)) map.set(zip, new Set());
+    map.get(zip).add(code.toUpperCase());
+  });
+  return map;
 }
 
 async function loadZipDistricts() {
   if (zipDistrictCache.loaded && zipDistrictCache.map.size) return zipDistrictCache.map;
-  try {
-    const res = await fetch(zipDistrictUrl, {
-      headers: { 'user-agent': 'actualapproval.com zip map (+https://github.com/actualapproval)' },
-    });
-    if (!res.ok) throw new Error(`zip csv ${res.status}`);
-    const text = await res.text();
-    const lines = text.trim().split(/\r?\n/);
-    const [header, ...rows] = lines;
-    const cols = header.split(',').map((c) => c.toLowerCase());
-    const iZip = cols.findIndex((c) => c.includes('zip'));
-    const iState = cols.findIndex((c) => c === 'state');
-    const iDistrict = cols.findIndex((c) => c.includes('district'));
-    if (iZip === -1 || iState === -1 || iDistrict === -1) throw new Error('zip csv missing columns');
-    const map = new Map();
-    rows.forEach((line) => {
-      const parts = line.split(',');
-      const zip = (parts[iZip] || '').padStart(5, '0');
-      const state = (parts[iState] || '').toUpperCase();
-      const district = parts[iDistrict];
-      const code = formatDistrictCode(state, district);
-      if (!map.has(zip)) map.set(zip, new Set());
-      map.get(zip).add(code.toUpperCase());
-    });
+  const cache = (map) => {
     zipDistrictCache = { loaded: true, map };
     return map;
-  } catch (err) {
-    console.warn('zip district load failed', err.message || err);
-    zipDistrictCache = { loaded: true, map: new Map() };
-    return zipDistrictCache.map;
-  }
-}
+  };
 
-async function geminiLookupNamesByZip(zip) {
-  if (!geminiKey) return [];
+  // Primary: load from local us_districts.csv (comprehensive ZIP-to-district mapping)
   try {
-    const prompt = `List the current U.S. House representatives for ZIP code ${zip}. Provide only full names, one per line. If unknown, reply exactly with 404.`;
-    const res = await fetch(`${geminiUrl}?key=${geminiKey}`, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [{
-          parts: [{ text: prompt }],
-        }],
-        generationConfig: { temperature: 0, maxOutputTokens: 256 },
-      }),
-    });
-    if (!res.ok) throw new Error(`gemini ${res.status}`);
-    const body = await res.json();
-    const text = body?.candidates?.[0]?.content?.parts?.[0]?.text || '';
-    if (!text || text.trim() === '404') return [];
-    return text
-      .split(/\r?\n/)
-      .map((line) => line.replace(/^[-*\d.\s]+/, '').trim())
-      .filter(Boolean);
+    const local = await fs.readFile(zipDistrictFile, 'utf-8');
+    const map = parseZipDistrictCsv(local);
+    console.log(`Loaded ${map.size} ZIP codes from us_districts.csv`);
+    return cache(map);
   } catch (err) {
-    console.warn('gemini lookup failed', err.message || err);
-    return [];
+    console.warn('us_districts.csv load failed', err.message || err);
   }
-}
 
-async function lookupSunlightByZip(zip) {
+  // Fallback: try old zip-house.csv format
   try {
-    const url = `${sunlightUrl}?zip=${encodeURIComponent(zip)}${sunlightKey ? `&apikey=${sunlightKey}` : ''}`;
-    const res = await fetch(url, {
-      headers: { 'user-agent': 'actualapproval.com zip lookup (+https://github.com/actualapproval)' },
-    });
-    if (!res.ok) throw new Error(`sunlight ${res.status}`);
-    const body = await res.json();
-    const results = body?.results || body?.legislators || [];
-    return results
-      .filter((r) => (r.chamber || r.term || '').toLowerCase().includes('house'))
-      .map((r) => ({
-        id: (r.bioguide_id || r.bioguide || '').trim(),
-        name: `${r.first_name || ''} ${r.last_name || ''}`.trim(),
-        state: (r.state || '').toUpperCase(),
-        district: r.district || r.district_number || '',
-      }))
-      .filter((r) => r.state);
+    const fallback = await fs.readFile(zipDistrictFallbackFile, 'utf-8');
+    const map = parseZipDistrictCsv(fallback);
+    console.log(`Loaded ${map.size} ZIP codes from fallback zip-house.csv`);
+    return cache(map);
   } catch (err) {
-    console.warn('sunlight lookup failed', err.message || err);
-    return [];
+    console.warn('zip-house.csv fallback failed', err.message || err);
   }
+
+  return cache(new Map());
 }
 
 function tallyVotes(votes) {
@@ -372,33 +356,6 @@ async function fetchAlignment() {
     console.error('alignment fetch failed', err);
   }
   return { house: [], senate: [] };
-}
-
-async function lookupHouseByZip(zip) {
-  try {
-    const url = `${whoIsUrl}?zip=${zip}&output=json`;
-    const res = await fetch(url, { headers: { 'user-agent': 'actualapproval.com zip lookup (+https://github.com/actualapproval)' } });
-    if (!res.ok) throw new Error(`whois ${res.status}`);
-    const contentType = res.headers.get('content-type') || '';
-    const text = await res.text();
-    if (!contentType.includes('json')) return [];
-    let body;
-    try {
-      body = JSON.parse(text);
-    } catch (_err) {
-      return [];
-    }
-    const results = body?.results || [];
-    return results.map((r) => ({
-      name: r.name,
-      state: r.state,
-      district: r.district,
-      party: r.party?.[0],
-    }));
-  } catch (err) {
-    console.warn('zip external lookup failed', err.message || err);
-    return [];
-  }
 }
 
 function normalizeName(name) {
@@ -657,44 +614,28 @@ app.get('/api/search', async (req, res) => {
       const lookup = zipcodes.lookup(zip);
       if (!lookup) return res.status(404).json({ error: 'ZIP not found' });
       const zipState = (lookup.state || '').toUpperCase();
-      const zipDistrictsMap = await loadZipDistricts();
-      const zipDistricts = zipDistrictsMap.get(zip);
+      houseResults = [];
+      const withinState = (member) => (member.state || '').toUpperCase().startsWith(zipState);
 
-      const gemNames = await geminiLookupNamesByZip(zip);
-      if (!gemNames.length) return res.status(404).json({ error: 'No matches for that name and ZIP' });
+      // Primary: use local ZIP→district CSV mapping
+      const zipDistrictsRaw = (await loadZipDistricts()).get(zip);
+      if (zipDistrictsRaw && zipDistrictsRaw.size) {
+        // Normalize district codes for comparison (handles GA-5 vs GA-05)
+        const zipDistrictsNormalized = new Set([...zipDistrictsRaw].map(normalizeDistrictCode));
+        houseResults = house.filter((m) => {
+          if (!withinState(m)) return false;
+          const memberDistrict = normalizeDistrictCode(m.state || '');
+          return zipDistrictsNormalized.has(memberDistrict);
+        });
+      }
 
-      const normGemNames = gemNames.map((n) => normalizeName(n));
-      let usableNames = normGemNames;
+      if (!houseResults.length) return res.status(404).json({ error: 'No district match for that ZIP' });
 
       if (name) {
         const normInput = normalizeName(name);
-        usableNames = normGemNames.filter((g) => g.includes(normInput) || normInput.includes(g));
-        if (!usableNames.length) return res.status(404).json({ error: 'No matches for that name and ZIP' });
+        houseResults = houseResults.filter((m) => normalizeName(m.name).includes(normInput));
+        if (!houseResults.length) return res.status(404).json({ error: 'No matches for that name and ZIP' });
       }
-
-      const nameSet = new Set(usableNames);
-      houseResults = house.filter((m) => {
-        const stateMatches = (m.state || '').toUpperCase().startsWith(zipState);
-        if (!stateMatches) return false;
-        if (zipDistricts && zipDistricts.size && !zipDistricts.has((m.state || '').toUpperCase())) return false;
-        return nameSet.has(normalizeName(m.name));
-      });
-
-      if (!houseResults.length && zipDistricts && zipDistricts.size) {
-        // If Gemini names missed, fall back to district map for this ZIP.
-        houseResults = house.filter((m) => {
-          const stateMatches = (m.state || '').toUpperCase().startsWith(zipState);
-          if (!stateMatches) return false;
-          return zipDistricts.has((m.state || '').toUpperCase());
-        });
-
-        if (name) {
-          const normInput = normalizeName(name);
-          houseResults = houseResults.filter((m) => normalizeName(m.name).includes(normInput));
-        }
-      }
-
-      if (!houseResults.length) return res.status(404).json({ error: 'No matches for that name and ZIP' });
 
       senateResults = senateResults.filter((m) => (m.state || '').toUpperCase() === zipState).slice(0, 2);
     }
