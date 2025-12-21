@@ -74,8 +74,8 @@ const state = {
 let lastThemeSwitch = 0;
 document.body.dataset.pageRoute = 'home';
 
-// Midterm Election Countdown (November 3, 2026)
-const MIDTERM_DATE = new Date('2026-11-03T00:00:00');
+// Midterm Election Countdown (November 3, 2026, UTC)
+const MIDTERM_DATE = new Date('2026-11-03T00:00:00Z');
 
 function updateCountdown() {
     const now = new Date();
