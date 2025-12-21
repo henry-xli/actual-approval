@@ -53,6 +53,102 @@ const fallbackPresident = {
 
 let zipDistrictCache = { loaded: false, map: new Map() };
 
+// Format district code consistently (e.g., "CA-17", "AL-4" -> "AL-04")
+function formatDistrictCode(state, district) {
+  if (!state) return '';
+  if (district === undefined || district === null || district === '' || district === 0 || district === '0' || district === 'AL') {
+    return `${state}-AL`;
+  }
+  const num = Number(district);
+  if (Number.isFinite(num) && num > 0) {
+    return `${state}-${String(num).padStart(2, '0')}`;
+  }
+  return `${state}-${district}`;
+}
+
+// Normalize district code for comparison (e.g., "AL-4" and "AL-04" both become "AL-04")
+function normalizeDistrictCode(code) {
+  if (!code) return '';
+  const parts = code.toUpperCase().split('-');
+  if (parts.length !== 2) return code.toUpperCase();
+  const state = parts[0];
+  const district = parts[1];
+  if (district === 'AL' || district === '0' || district === '00') {
+    return `${state}-AL`;
+  }
+  const num = Number(district);
+  if (Number.isFinite(num) && num > 0) {
+    return `${state}-${String(num).padStart(2, '0')}`;
+  }
+  return code.toUpperCase();
+}
+
+// Load ZIP to congressional district mapping
+async function loadZipDistricts() {
+  if (zipDistrictCache.loaded) return zipDistrictCache.map;
+  
+  const map = new Map();
+  
+  // Try primary file first (us_districts.csv)
+  try {
+    const raw = await fs.readFile(zipDistrictFile, 'utf-8');
+    const lines = raw.trim().split(/\r?\n/);
+    const [headerLine, ...rows] = lines;
+    const headers = headerLine.split(',').map(h => h.trim().toLowerCase());
+    const stateIdx = headers.indexOf('state_abbr');
+    const zcIdx = headers.indexOf('zcta');
+    const cdIdx = headers.indexOf('cd');
+    
+    if (stateIdx !== -1 && zcIdx !== -1 && cdIdx !== -1) {
+      for (const line of rows) {
+        const cols = line.split(',');
+        const state = (cols[stateIdx] || '').trim().toUpperCase();
+        const zip = (cols[zcIdx] || '').trim();
+        const cd = (cols[cdIdx] || '').trim();
+        if (zip && state && cd) {
+          const districtCode = formatDistrictCode(state, cd);
+          if (!map.has(zip)) map.set(zip, new Set());
+          map.get(zip).add(districtCode);
+        }
+      }
+    }
+  } catch (err) {
+    if (err.code !== 'ENOENT') console.warn('us_districts.csv load error', err.message || err);
+  }
+  
+  // Fallback to zip-house.csv if primary is empty
+  if (map.size === 0) {
+    try {
+      const raw = await fs.readFile(zipDistrictFallbackFile, 'utf-8');
+      const lines = raw.trim().split(/\r?\n/);
+      const [headerLine, ...rows] = lines;
+      const headers = headerLine.split(',').map(h => h.trim().toLowerCase());
+      const stateIdx = headers.indexOf('state');
+      const zipIdx = headers.indexOf('zip');
+      const districtIdx = headers.indexOf('district');
+      
+      if (stateIdx !== -1 && zipIdx !== -1 && districtIdx !== -1) {
+        for (const line of rows) {
+          const cols = line.split(',');
+          const state = (cols[stateIdx] || '').trim().toUpperCase();
+          const zip = (cols[zipIdx] || '').trim();
+          const district = (cols[districtIdx] || '').trim();
+          if (zip && state) {
+            const districtCode = formatDistrictCode(state, district);
+            if (!map.has(zip)) map.set(zip, new Set());
+            map.get(zip).add(districtCode);
+          }
+        }
+      }
+    } catch (err) {
+      if (err.code !== 'ENOENT') console.warn('zip-house.csv load error', err.message || err);
+    }
+  }
+  
+  zipDistrictCache = { loaded: true, map };
+  return map;
+}
+
 async function readJSON(file) {
   const full = path.join(dataDir, file);
   const raw = await fs.readFile(full, 'utf-8');

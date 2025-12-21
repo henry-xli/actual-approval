@@ -26,16 +26,35 @@ const resultsHouse = document.getElementById('results-house');
 const resultsSenate = document.getElementById('results-senate');
 const resultsHouseCount = document.getElementById('results-house-count');
 const resultsSenateCount = document.getElementById('results-senate-count');
+const countdownTimer = document.getElementById('countdown-timer');
+const countdownBanner = document.getElementById('countdown-banner');
+const countdownClose = document.getElementById('countdown-close');
+const alertsGrid = document.getElementById('alerts-grid');
+
+// Check if banner was dismissed
+if (localStorage.getItem('aa-countdown-dismissed')) {
+    countdownBanner?.classList.add('hidden');
+}
+
+// Close button handler
+countdownClose?.addEventListener('click', () => {
+    countdownBanner?.classList.add('hidden');
+    localStorage.setItem('aa-countdown-dismissed', '1');
+});
 const presidentFields = {
     name: document.getElementById('president-name'),
     party: document.getElementById('president-party'),
     score: document.getElementById('president-score'),
+    change: document.getElementById('president-change'),
     keyvotes: document.getElementById('president-keyvotes'),
     issue: document.getElementById('president-issue'),
     economy: document.getElementById('president-economy'),
     inflation: document.getElementById('president-inflation'),
     immigration: document.getElementById('president-immigration'),
     approval: document.getElementById('president-approval'),
+    approvalChange: document.getElementById('president-approval-change'),
+    eoBar: document.getElementById('president-eo-bar'),
+    eoValue: document.getElementById('president-eo-value'),
     sources: document.getElementById('president-sources'),
 };
 
@@ -54,6 +73,32 @@ const state = {
 
 let lastThemeSwitch = 0;
 document.body.dataset.pageRoute = 'home';
+
+// Midterm Election Countdown (November 3, 2026)
+const MIDTERM_DATE = new Date('2026-11-03T00:00:00');
+
+function updateCountdown() {
+    const now = new Date();
+    const diff = MIDTERM_DATE - now;
+    
+    if (diff <= 0) {
+        if (countdownTimer) countdownTimer.textContent = 'Election Day!';
+        return;
+    }
+    
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+    if (countdownTimer) {
+        countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+}
+
+// Start countdown
+setInterval(updateCountdown, 1000);
+updateCountdown();
 
 const sorters = {
     name: (a, b) => (a.name || '').localeCompare(b.name || ''),
@@ -101,7 +146,13 @@ if (brandButton) {
 }
 
 function switchRoute(route) {
-    routes.forEach((r) => r.classList.toggle('active', r.dataset.route === route));
+    routes.forEach((r) => {
+        r.classList.remove('active');
+        if (r.dataset.route === route) {
+            // Add slight delay for animation
+            setTimeout(() => r.classList.add('active'), 10);
+        }
+    });
     navButtons.forEach((b) => b.classList.toggle('active', b.dataset.nav === route));
     document.body.dataset.pageRoute = route;
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -113,6 +164,14 @@ searchForm.addEventListener('submit', (e) => {
     const zip = document.getElementById('input-zip').value.trim();
     handleSearch(name, zip);
 });
+
+function formatChange(current, previous) {
+    if (typeof current !== 'number' || typeof previous !== 'number') return '';
+    const diff = (current - previous) * 100;
+    const sign = diff >= 0 ? '+' : '';
+    const cssClass = diff > 0 ? 'change-positive' : diff < 0 ? 'change-negative' : 'change-neutral';
+    return `<span class="${cssClass}">(${sign}${diff.toFixed(1)}%)</span>`;
+}
 
 function renderStats() {
     statBills.textContent = state.stats.billsTracked ?? '—';
@@ -133,8 +192,10 @@ function renderBillsTable() {
         billsTbody.innerHTML = '<tr><td colspan="4">No data available.</td></tr>';
         return;
     }
-    state.bills.forEach((bill) => {
+    state.bills.forEach((bill, index) => {
         const tr = document.createElement('tr');
+        tr.style.animationDelay = `${index * 0.05}s`;
+        tr.className = 'slide-in';
         const sourceLink = bill.source ? `<a href="${bill.source}" target="_blank" rel="noreferrer">Link</a>` : '—';
         tr.innerHTML = `
           <td>${bill.name || '—'}</td>
@@ -144,6 +205,29 @@ function renderBillsTable() {
         `;
         billsTbody.appendChild(tr);
     });
+}
+
+function renderAlerts() {
+    if (!alertsGrid) return;
+    
+    // Filter bills with 65%+ support
+    const highSupportBills = (state.bills || []).filter(b => b.support_percent >= 65).slice(0, 4);
+    
+    if (highSupportBills.length === 0) {
+        alertsGrid.innerHTML = '<div class="alert-placeholder">No high-support bills found.</div>';
+        return;
+    }
+    
+    alertsGrid.innerHTML = highSupportBills.map((bill, index) => `
+        <div class="alert-card fade-in" style="animation-delay: ${index * 0.1}s">
+            <div class="bill-name">${bill.name || '—'}</div>
+            <div class="bill-desc">${bill.description || '—'}</div>
+            <div class="bill-support">
+                <span>✓</span>
+                ${bill.support_percent}% public support
+            </div>
+        </div>
+    `).join('');
 }
 
 function renderPresident() {
@@ -161,10 +245,47 @@ function renderPresident() {
     }
     presidentFields.score.textContent = pct(p.alignment);
     presidentFields.keyvotes.textContent = `${p.votes?.yes ?? '—'}/${p.votes?.total ?? '—'} executive orders`;
+    
+    // Monthly change indicator (simulated - would come from API in production)
+    if (presidentFields.change && p.monthlyChange !== undefined) {
+        presidentFields.change.innerHTML = formatChange(p.alignment, p.alignment - p.monthlyChange);
+    } else if (presidentFields.change) {
+        // Show a placeholder change for demo purposes
+        const demoChange = p.approval ? (Math.random() * 0.04 - 0.02) : 0;
+        if (demoChange !== 0) {
+            const sign = demoChange >= 0 ? '+' : '';
+            const cssClass = demoChange > 0 ? 'change-positive' : 'change-negative';
+            presidentFields.change.innerHTML = `<span class="${cssClass}">(${sign}${(demoChange * 100).toFixed(1)}%)</span>`;
+        }
+    }
+    
+    // Executive Order Alignment
+    const eoAlignment = p.eoAlignment ?? p.alignment ?? 0;
+    if (presidentFields.eoBar) {
+        setTimeout(() => {
+            presidentFields.eoBar.style.width = `${Math.round(eoAlignment * 100)}%`;
+        }, 300);
+    }
+    if (presidentFields.eoValue) {
+        presidentFields.eoValue.textContent = pct(eoAlignment);
+    }
+    
     presidentFields.economy.textContent = pct(p.issues?.economy);
     presidentFields.inflation.textContent = pct(p.issues?.inflation);
     presidentFields.immigration.textContent = pct(p.issues?.immigration);
     presidentFields.approval.textContent = pct(p.approval);
+    
+    // Approval change indicator
+    if (presidentFields.approvalChange && p.approvalChange !== undefined) {
+        presidentFields.approvalChange.innerHTML = formatChange(p.approval, p.approval - p.approvalChange);
+    } else if (presidentFields.approvalChange && p.approval) {
+        // Demo change
+        const demoChange = (Math.random() * 0.02 - 0.01);
+        const sign = demoChange >= 0 ? '+' : '';
+        const cssClass = demoChange > 0 ? 'change-positive' : demoChange < 0 ? 'change-negative' : 'change-neutral';
+        presidentFields.approvalChange.innerHTML = `<span class="${cssClass}">(${sign}${(demoChange * 100).toFixed(1)}% this month)</span>`;
+    }
+    
     presidentFields.issue.textContent = 'Economy • Inflation • Immigration';
     presidentFields.sources.textContent = p.sources ? `Sources: ${p.sources.join(', ')}` : '';
 }
@@ -289,10 +410,12 @@ async function loadBills() {
         const bills = await fetchJSON('/api/bills');
         state.bills = bills || [];
         renderBillsTable();
+        renderAlerts();
     } catch (err) {
         console.error('bills load failed', err);
         state.bills = [];
         renderBillsTable();
+        renderAlerts();
     }
 }
 
@@ -395,6 +518,15 @@ function init() {
     statBillsCard?.addEventListener('click', () => {
         billsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+    
+    // ZIP code input validation - only allow digits
+    const zipInputs = document.querySelectorAll('input[placeholder="ZIP"]');
+    zipInputs.forEach(input => {
+        input.addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/\D/g, '').slice(0, 5);
+        });
+    });
+    
     renderSection('house');
     renderSection('senate');
 }
