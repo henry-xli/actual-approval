@@ -636,6 +636,16 @@ app.get('/api/senate', async (_req, res) => {
   }
 });
 
+app.get('/api/bills', async (_req, res) => {
+  try {
+    const bills = await readCSV('popular_bills.csv');
+    res.json(bills);
+  } catch (err) {
+    console.error('bills error', err);
+    res.status(500).json({ error: 'Failed to load bills' });
+  }
+});
+
 app.get('/api/search', async (req, res) => {
   const name = (req.query.name || '').trim();
   const zip = (req.query.zip || '').trim();

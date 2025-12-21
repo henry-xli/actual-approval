@@ -8,6 +8,9 @@ const statBills = document.getElementById('stat-bills');
 const statAlignment = document.getElementById('stat-alignment');
 const statCongress = document.getElementById('stat-congress');
 const statReps = document.getElementById('stat-reps');
+const statBillsCard = document.getElementById('stat-bills-card');
+const billsTbody = document.getElementById('bills-tbody');
+const billsSection = document.getElementById('bills-section');
 const houseGrid = document.getElementById('house-grid');
 const senateGrid = document.getElementById('senate-grid');
 const houseSearchForm = document.getElementById('house-search');
@@ -41,6 +44,7 @@ const state = {
     president: null,
     house: [],
     senate: [],
+    bills: [],
     searchResults: { president: [], house: [], senate: [] },
     filters: {
         house: { party: 'all', sort: 'name' },
@@ -120,6 +124,26 @@ function renderStats() {
     const statAlignDup = document.getElementById('stat-alignment-dup');
     if (statBillsDup) statBillsDup.textContent = state.stats.billsTracked ?? '—';
     if (statAlignDup) statAlignDup.textContent = pct(state.stats.averageAlignment);
+}
+
+function renderBillsTable() {
+    if (!billsTbody) return;
+    billsTbody.innerHTML = '';
+    if (!state.bills || !state.bills.length) {
+        billsTbody.innerHTML = '<tr><td colspan="4">No data available.</td></tr>';
+        return;
+    }
+    state.bills.forEach((bill) => {
+        const tr = document.createElement('tr');
+        const sourceLink = bill.source ? `<a href="${bill.source}" target="_blank" rel="noreferrer">Link</a>` : '—';
+        tr.innerHTML = `
+          <td>${bill.name || '—'}</td>
+          <td>${bill.description || '—'}</td>
+          <td class="support">${bill.support_percent ? `${bill.support_percent}%` : '—'}</td>
+          <td>${sourceLink}</td>
+        `;
+        billsTbody.appendChild(tr);
+    });
 }
 
 function renderPresident() {
@@ -228,6 +252,18 @@ async function loadData() {
     }
 }
 
+async function loadBills() {
+    try {
+        const bills = await fetchJSON('/api/bills');
+        state.bills = bills || [];
+        renderBillsTable();
+    } catch (err) {
+        console.error('bills load failed', err);
+        state.bills = [];
+        renderBillsTable();
+    }
+}
+
 async function handleSearch(name, zip) {
     try {
         const params = new URLSearchParams();
@@ -306,6 +342,7 @@ function init() {
     renderStats();
     renderPresident();
     loadData();
+    loadBills();
 
     houseParty.addEventListener('change', () => updateFilters('house'));
     senateParty.addEventListener('change', () => updateFilters('senate'));
@@ -322,6 +359,9 @@ function init() {
         const name = document.getElementById('senate-input-name').value.trim();
         const zip = document.getElementById('senate-input-zip').value.trim();
         handleScopedSearch('senate', name, zip);
+    });
+    statBillsCard?.addEventListener('click', () => {
+        billsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
     renderSection('house');
     renderSection('senate');
