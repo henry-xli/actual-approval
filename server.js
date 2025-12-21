@@ -21,9 +21,9 @@ const votingStates = new Set([
 const presidentSources = {
   fteCsv: 'https://raw.githubusercontent.com/fivethirtyeight/trump-approval-data/master/approval_topline.csv',
   general: 'https://www.realclearpolitics.com/epolls/other/president_trump_job_approval-6179.html',
-  economy: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy.html',
-  inflation: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation.html',
-  immigration: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration.html',
+  economy: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy',
+  inflation: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation',
+  immigration: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration',
 };
 const rosterSources = [
   'https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.json',
@@ -75,10 +75,26 @@ async function readCSV(file) {
   const raw = await fs.readFile(full, 'utf-8');
   const lines = raw.trim().split(/\r?\n/);
   const [headerLine, ...rows] = lines;
-  const headers = headerLine.split(',');
+  const headers = headerLine.split(',').map(h => h.trim());
   return rows
-    .map((line) => line.split(','))
-    .map((cols) => Object.fromEntries(headers.map((h, idx) => [h, cols[idx]])));
+    .map((line) => {
+      // Simple CSV parser that handles quoted commas
+      const cols = [];
+      let current = '';
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        if (char === '"') inQuotes = !inQuotes;
+        else if (char === ',' && !inQuotes) {
+          cols.push(current.trim());
+          current = '';
+        } else {
+          current += char;
+        }
+      }
+      cols.push(current.trim());
+      return Object.fromEntries(headers.map((h, idx) => [h, cols[idx] || '']));
+    });
 }
 
 async function fetchFteApproval() {
@@ -106,6 +122,18 @@ async function fetchFteApproval() {
   if (!parsed.length) throw new Error('fte csv empty');
   parsed.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
   return parsed[parsed.length - 1].approve / 100;
+}
+
+function extractApprove(html) {
+  // New RCP layout: <p class="text-body-2-bold leading-[1.2rem]">Approve</p></div><p class="...">40.6<sup ...>%</sup></p>
+  const match = html.match(/Approve<\/p><\/div><p[^>]*>([\d.]+)<sup/);
+  if (match) return Number.parseFloat(match[1]) / 100;
+
+  // Fallback for older layout or different pages
+  const oldMatch = html.match(/RCP Average.*?([\d.]+)/s);
+  if (oldMatch) return Number.parseFloat(oldMatch[1]) / 100;
+
+  return null;
 }
 
 async function scrapeApproval(url) {
@@ -137,7 +165,12 @@ async function loadPresident() {
   const offlineMode = process.env.OFFLINE_MODE === '1';
   if (offlineMode) {
     const seeded = (await readPresidentSeed()) || fallbackPresident;
-    const offline = { ...seeded, updatedAt: new Date().toISOString() };
+    const offline = {
+      ...seeded,
+      alignment: null,
+      votes: { yes: 0, total: 0 },
+      updatedAt: new Date().toISOString()
+    };
     await fs.writeFile(presidentCacheFile, JSON.stringify(offline, null, 2));
     return offline;
   }
@@ -153,9 +186,10 @@ async function loadPresident() {
     const president = {
       name: 'Donald J. Trump',
       party: 'R',
-      alignment: approval,
+      alignment: null, // Alignment for President is not yet calculated from EOs
       approval,
       issues: { economy, inflation, immigration },
+      votes: { yes: 0, total: 0 }, // Placeholder for executive orders
       sources: Object.values(presidentSources),
       updatedAt: new Date().toISOString(),
     };
@@ -175,187 +209,62 @@ function classifyYes(position) {
   return val === 'yes' || val === 'yea' || val === 'aye';
 }
 
-async function fetchChamberVotesPropublica(chamber) {
-  if (!propublicaKey) return [];
-  const url = `https://api.propublica.org/congress/v1/${propublicaCongress}/${chamber}/votes/recent.json`;
-  const res = await fetch(url, {
-    headers: { 'X-API-Key': propublicaKey, 'user-agent': 'actualapproval.com votes (+https://github.com/actualapproval)' },
-  });
-  if (!res.ok) throw new Error(`propublica ${chamber} votes ${res.status}`);
-  const body = await res.json();
-  const votes = body?.results?.votes || [];
-  return votes.slice(0, recentVotesLimit);
+function classifyNo(position) {
+  const val = (position || '').toLowerCase();
+  return val === 'no' || val === 'nay';
 }
 
-async function fetchCongressGovVotes(chamber) {
-  if (!congressGovKey) return [];
-  const listUrl = `https://api.congress.gov/v3/roll-call-vote/${propublicaCongress}/${chamber}?api_key=${congressGovKey}`;
-  const listRes = await fetch(listUrl, { headers: { 'user-agent': 'actualapproval.com votes (+https://github.com/actualapproval)' } });
-  if (listRes.status === 404) return [];
-  if (!listRes.ok) throw new Error(`congress.gov list ${chamber} ${listRes.status}`);
-  const listBody = await listRes.json();
-  const items = listBody?.rollCallVotes || listBody?.results?.votes || [];
-  const limited = items.slice(0, recentVotesLimit);
-  const detailPromises = limited.map(async (vote) => {
-    const number = vote.rollCallNumber || vote.roll_number || vote.number;
-    if (!number) return null;
-    const detailUrl = `https://api.congress.gov/v3/roll-call-vote/${propublicaCongress}/${chamber}/${number}?api_key=${congressGovKey}`;
-    const detailRes = await fetch(detailUrl, { headers: { 'user-agent': 'actualapproval.com votes (+https://github.com/actualapproval)' } });
-    if (detailRes.status === 404) return null;
-    if (!detailRes.ok) return null;
-    const detail = await detailRes.json();
-    detail.rollCallNumber = number;
-    return detail;
-  });
-  const details = (await Promise.all(detailPromises)).filter(Boolean);
-  return details;
-}
-
-function formatDistrictCode(state, district) {
-  const distRaw = (district ?? '').toString().trim();
-  const dist = distRaw.padStart(2, '0');
-  return `${state}-${dist}`.replace(/-0{2}$/, state);
-}
-
-// Normalize district codes for comparison (handles GA-5 vs GA-05)
-function normalizeDistrictCode(code) {
-  const [state, dist] = (code || '').toUpperCase().split('-');
-  if (!state) return code.toUpperCase();
-  if (!dist) return state; // At-large
-  const distNum = parseInt(dist, 10);
-  if (Number.isNaN(distNum)) return code.toUpperCase();
-  return `${state}-${distNum}`; // Remove leading zeros
-}
-
-function parseZipDistrictCsv(text, format = 'auto') {
-  const lines = text.trim().split(/\r?\n/);
-  const [header, ...rows] = lines;
-  const cols = header.split(',').map((c) => c.toLowerCase().trim());
-  
-  // Detect format: us_districts.csv uses state_abbr,zcta,cd; old format uses zip,state,district
-  const isNewFormat = cols.includes('state_abbr') && cols.includes('zcta') && cols.includes('cd');
-  
-  let iZip, iState, iDistrict;
-  if (isNewFormat) {
-    iZip = cols.indexOf('zcta');
-    iState = cols.indexOf('state_abbr');
-    iDistrict = cols.indexOf('cd');
-  } else {
-    iZip = cols.findIndex((c) => c.includes('zip'));
-    iState = cols.findIndex((c) => c === 'state');
-    iDistrict = cols.findIndex((c) => c.includes('district'));
-  }
-  
-  if (iZip === -1 || iState === -1 || iDistrict === -1) throw new Error('zip csv missing columns');
-  
-  const map = new Map();
-  rows.forEach((line) => {
-    const parts = line.split(',');
-    const zip = (parts[iZip] || '').padStart(5, '0');
-    const state = (parts[iState] || '').toUpperCase();
-    const district = (parts[iDistrict] || '').trim();
-    if (!state || !zip) return;
-    const code = formatDistrictCode(state, district);
-    if (!map.has(zip)) map.set(zip, new Set());
-    map.get(zip).add(code.toUpperCase());
-  });
-  return map;
-}
-
-async function loadZipDistricts() {
-  if (zipDistrictCache.loaded && zipDistrictCache.map.size) return zipDistrictCache.map;
-  const cache = (map) => {
-    zipDistrictCache = { loaded: true, map };
-    return map;
-  };
-
-  // Primary: load from local us_districts.csv (comprehensive ZIP-to-district mapping)
+async function calculateAlignmentFromDatabase() {
   try {
-    const local = await fs.readFile(zipDistrictFile, 'utf-8');
-    const map = parseZipDistrictCsv(local);
-    console.log(`Loaded ${map.size} ZIP codes from us_districts.csv`);
-    return cache(map);
-  } catch (err) {
-    console.warn('us_districts.csv load failed', err.message || err);
-  }
+    const votesPath = path.join(dataDir, 'votes.json');
+    const raw = await fs.readFile(votesPath, 'utf-8');
+    const votesDb = JSON.parse(raw);
 
-  // Fallback: try old zip-house.csv format
-  try {
-    const fallback = await fs.readFile(zipDistrictFallbackFile, 'utf-8');
-    const map = parseZipDistrictCsv(fallback);
-    console.log(`Loaded ${map.size} ZIP codes from fallback zip-house.csv`);
-    return cache(map);
-  } catch (err) {
-    console.warn('zip-house.csv fallback failed', err.message || err);
-  }
+    const results = { house: [], senate: [] };
 
-  return cache(new Map());
-}
+    for (const chamber of ['house', 'senate']) {
+      const chamberVotes = votesDb[chamber] || {};
+      const memberStats = new Map();
 
-function tallyVotes(votes) {
-  const map = new Map();
-  votes.forEach((vote) => {
-    const positions = vote?.votes?.vote?.positions || vote?.positions || [];
-    positions.forEach((pos) => {
-      const id = (pos.memberId || pos.member_id || '').toLowerCase();
-      if (!id) return;
-      const entry = map.get(id) || {
-        id,
-        name: `${pos.first_name || pos.firstName || ''} ${pos.last_name || pos.lastName || ''}`.trim(),
-        votes: { yes: 0, total: 0 },
-        flaggedVotes: [],
-      };
-      entry.votes.total += 1;
-      if (classifyYes(pos.vote_position || pos.voteCast)) entry.votes.yes += 1;
-      const question = vote.question || vote.description || vote.voteQuestion || '';
-      const date = vote.date || vote.actionDate || '';
-      const position = pos.vote_position || pos.voteCast || '';
-      entry.flaggedVotes.push({ question, date, position });
-      map.set(id, entry);
-    });
-  });
-  return Array.from(map.values()).map((row) => ({
-    ...row,
-    alignment: row.votes.total ? row.votes.yes / row.votes.total : null,
-    flaggedVotes: (row.flaggedVotes || []).slice(0, 3),
-  }));
-}
+      for (const voteId in chamberVotes) {
+        const vote = chamberVotes[voteId];
+        const bill = vote.bill;
+        const positions = vote.positions;
 
-async function fetchAlignment() {
-  try {
-    if (congressGovKey) {
-      try {
-        const [houseVotes, senateVotes] = await Promise.all([
-          fetchCongressGovVotes('house'),
-          fetchCongressGovVotes('senate'),
-        ]);
-        const houseTallied = tallyVotes(houseVotes);
-        const senateTallied = tallyVotes(senateVotes);
-        if (houseTallied.length || senateTallied.length) {
-          return { house: houseTallied, senate: senateTallied };
+        for (const bioId in positions) {
+          const pos = positions[bioId];
+          const isYes = classifyYes(pos);
+
+          const stats = memberStats.get(bioId) || {
+            id: bioId,
+            votes: { yes: 0, total: 0 },
+            flaggedVotes: []
+          };
+
+          stats.votes.total += 1;
+          if (isYes) stats.votes.yes += 1;
+
+          stats.flaggedVotes.push({
+            question: `${bill["Bill Title"]} - ${bill["Short Description"]}`,
+            date: bill["Last Vote Year"],
+            position: pos
+          });
+
+          memberStats.set(bioId, stats);
         }
-      } catch (err) {
-        console.warn('congress.gov alignment failed, will try fallback', err.message || err);
       }
+
+      results[chamber] = Array.from(memberStats.values()).map(s => ({
+        ...s,
+        alignment: s.votes.total ? s.votes.yes / s.votes.total : 0
+      }));
     }
-    if (propublicaKey) {
-      try {
-        const [houseVotes, senateVotes] = await Promise.all([
-          fetchChamberVotesPropublica('house'),
-          fetchChamberVotesPropublica('senate'),
-        ]);
-        return {
-          house: tallyVotes(houseVotes),
-          senate: tallyVotes(senateVotes),
-        };
-      } catch (err) {
-        console.warn('propublica alignment failed', err.message || err);
-      }
-    }
+
+    return results;
   } catch (err) {
-    console.error('alignment fetch failed', err);
+    console.error('Failed to calculate alignment from database', err);
+    return { house: [], senate: [] };
   }
-  return { house: [], senate: [] };
 }
 
 function normalizeName(name) {
@@ -522,16 +431,15 @@ async function loadRoster({ houseAlign, senateAlign }) {
 }
 
 async function loadData() {
-  const [bills, houseAlign, senateAlign, president] = await Promise.all([
+  const [bills, president] = await Promise.all([
     readCSV('popular_bills.csv'),
-    readJSON('house_alignment.json'),
-    readJSON('senate_alignment.json'),
     loadPresident(),
   ]);
-  const liveAlign = await fetchAlignment();
-  const mergedHouseAlign = [...(houseAlign || []), ...(liveAlign.house || [])];
-  const mergedSenateAlign = [...(senateAlign || []), ...(liveAlign.senate || [])];
-  const { house, senate } = await loadRoster({ houseAlign: mergedHouseAlign, senateAlign: mergedSenateAlign });
+  console.log('Loaded bills:', bills.length);
+
+  const liveAlign = await calculateAlignmentFromDatabase();
+  const { house, senate } = await loadRoster({ houseAlign: liveAlign.house, senateAlign: liveAlign.senate });
+
   const normalizeVotes = (list) => list.map((m) => {
     const yes = Number.isFinite(Number(m.votes?.yes)) ? Number(m.votes.yes) : 0;
     const total = Number.isFinite(Number(m.votes?.total)) ? Number(m.votes.total) : 0;
@@ -545,6 +453,7 @@ async function loadData() {
       flaggedVotes: m.flaggedVotes || [],
     };
   });
+
   const houseWithVotes = normalizeVotes(house);
   const senateWithVotes = normalizeVotes(senate);
   const stats = computeStats({ bills, house: houseWithVotes, senate: senateWithVotes });
@@ -595,7 +504,13 @@ app.get('/api/senate', async (_req, res) => {
 
 app.get('/api/bills', async (_req, res) => {
   try {
-    const bills = await readCSV('popular_bills.csv');
+    const rawBills = await readCSV('popular_bills.csv');
+    const bills = rawBills.map(b => ({
+      name: b['Bill Title'],
+      description: b['Short Description'],
+      support_percent: parseInt(b['Public Support %']),
+      source: b['Source']
+    }));
     res.json(bills);
   } catch (err) {
     console.error('bills error', err);

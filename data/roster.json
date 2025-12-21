@@ -4,22 +4,22 @@
       "id": "A000055",
       "name": "Robert B. Aderholt",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AL-4",
+      "state": "AL-04",
       "chamber": "house"
     },
     {
       "id": "B001257",
       "name": "Gus M. Bilirakis",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-12",
       "chamber": "house"
@@ -28,22 +28,22 @@
       "id": "B000490",
       "name": "Sanford D. Bishop, Jr.",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-2",
+      "state": "GA-02",
       "chamber": "house"
     },
     {
       "id": "B001260",
       "name": "Vern Buchanan",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-16",
       "chamber": "house"
@@ -52,10 +52,10 @@
       "id": "C000059",
       "name": "Ken Calvert",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-41",
       "chamber": "house"
@@ -64,22 +64,22 @@
       "id": "C001072",
       "name": "André Carson",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IN-7",
+      "state": "IN-07",
       "chamber": "house"
     },
     {
       "id": "C001051",
       "name": "John R. Carter",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-31",
       "chamber": "house"
@@ -88,10 +88,10 @@
       "id": "C001066",
       "name": "Kathy Castor",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-14",
       "chamber": "house"
@@ -100,10 +100,10 @@
       "id": "C001080",
       "name": "Judy Chu",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-28",
       "chamber": "house"
@@ -112,70 +112,70 @@
       "id": "C001067",
       "name": "Yvette D. Clarke",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-9",
+      "state": "NY-09",
       "chamber": "house"
     },
     {
       "id": "C001061",
       "name": "Emanuel Cleaver",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MO-5",
+      "state": "MO-05",
       "chamber": "house"
     },
     {
       "id": "C000537",
       "name": "James E. Clyburn",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SC-6",
+      "state": "SC-06",
       "chamber": "house"
     },
     {
       "id": "C001068",
       "name": "Steve Cohen",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-9",
+      "state": "TN-09",
       "chamber": "house"
     },
     {
       "id": "C001053",
       "name": "Tom Cole",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OK-4",
+      "state": "OK-04",
       "chamber": "house"
     },
     {
       "id": "C001059",
       "name": "Jim Costa",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-21",
       "chamber": "house"
@@ -184,34 +184,34 @@
       "id": "C001069",
       "name": "Joe Courtney",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CT-2",
+      "state": "CT-02",
       "chamber": "house"
     },
     {
       "id": "C001087",
       "name": "Eric A. \"Rick\" Crawford",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AR-1",
+      "state": "AR-01",
       "chamber": "house"
     },
     {
       "id": "C001063",
       "name": "Henry Cuellar",
       "party": "Democrat",
-      "alignment": 78,
+      "alignment": null,
       "votes": {
-        "yes": 7,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-28",
       "chamber": "house"
@@ -220,58 +220,58 @@
       "id": "D000096",
       "name": "Danny K. Davis",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-7",
+      "state": "IL-07",
       "chamber": "house"
     },
     {
       "id": "D000197",
       "name": "Diana DeGette",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CO-1",
+      "state": "CO-01",
       "chamber": "house"
     },
     {
       "id": "D000216",
       "name": "Rosa L. DeLauro",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CT-3",
+      "state": "CT-03",
       "chamber": "house"
     },
     {
       "id": "D000616",
       "name": "Scott DesJarlais",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-4",
+      "state": "TN-04",
       "chamber": "house"
     },
     {
       "id": "D000600",
       "name": "Mario Diaz-Balart",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-26",
       "chamber": "house"
@@ -280,10 +280,10 @@
       "id": "D000399",
       "name": "Lloyd Doggett",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-37",
       "chamber": "house"
@@ -292,202 +292,202 @@
       "id": "F000459",
       "name": "Charles J. \"Chuck\" Fleischmann",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-3",
+      "state": "TN-03",
       "chamber": "house"
     },
     {
       "id": "F000450",
       "name": "Virginia Foxx",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NC-5",
+      "state": "NC-05",
       "chamber": "house"
     },
     {
       "id": "G000559",
       "name": "John Garamendi",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-8",
+      "state": "CA-08",
       "chamber": "house"
     },
     {
       "id": "G000565",
       "name": "Paul A. Gosar",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-9",
+      "state": "AZ-09",
       "chamber": "house"
     },
     {
       "id": "G000546",
       "name": "Sam Graves",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MO-6",
+      "state": "MO-06",
       "chamber": "house"
     },
     {
       "id": "G000553",
       "name": "Al Green",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TX-9",
+      "state": "TX-09",
       "chamber": "house"
     },
     {
       "id": "G000568",
       "name": "H. Morgan Griffith",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "VA-9",
+      "state": "VA-09",
       "chamber": "house"
     },
     {
       "id": "G000558",
       "name": "Brett Guthrie",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KY-2",
+      "state": "KY-02",
       "chamber": "house"
     },
     {
       "id": "H001052",
       "name": "Andy Harris",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MD-1",
+      "state": "MD-01",
       "chamber": "house"
     },
     {
       "id": "H001047",
       "name": "James A. Himes",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CT-4",
+      "state": "CT-04",
       "chamber": "house"
     },
     {
       "id": "H000874",
       "name": "Steny H. Hoyer",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MD-5",
+      "state": "MD-05",
       "chamber": "house"
     },
     {
       "id": "H001058",
       "name": "Bill Huizenga",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-4",
+      "state": "MI-04",
       "chamber": "house"
     },
     {
       "id": "J000288",
       "name": "Henry C. \"Hank\" Johnson, Jr.",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-4",
+      "state": "GA-04",
       "chamber": "house"
     },
     {
       "id": "J000289",
       "name": "Jim Jordan",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OH-4",
+      "state": "OH-04",
       "chamber": "house"
     },
     {
       "id": "K000009",
       "name": "Marcy Kaptur",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OH-9",
+      "state": "OH-09",
       "chamber": "house"
     },
     {
       "id": "K000375",
       "name": "William R. Keating",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-9",
+      "state": "MA-09",
       "chamber": "house"
     },
     {
       "id": "K000376",
       "name": "Mike Kelly",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-16",
       "chamber": "house"
@@ -496,46 +496,46 @@
       "id": "L000560",
       "name": "Rick Larsen",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-2",
+      "state": "WA-02",
       "chamber": "house"
     },
     {
       "id": "L000557",
       "name": "John B. Larson",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CT-1",
+      "state": "CT-01",
       "chamber": "house"
     },
     {
       "id": "L000566",
       "name": "Robert E. Latta",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OH-5",
+      "state": "OH-05",
       "chamber": "house"
     },
     {
       "id": "L000397",
       "name": "Zoe Lofgren",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-18",
       "chamber": "house"
@@ -544,46 +544,46 @@
       "id": "L000491",
       "name": "Frank D. Lucas",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OK-3",
+      "state": "OK-03",
       "chamber": "house"
     },
     {
       "id": "L000562",
       "name": "Stephen F. Lynch",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-8",
+      "state": "MA-08",
       "chamber": "house"
     },
     {
       "id": "M001163",
       "name": "Doris O. Matsui",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-7",
+      "state": "CA-07",
       "chamber": "house"
     },
     {
       "id": "M001157",
       "name": "Michael T. McCaul",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-10",
       "chamber": "house"
@@ -592,70 +592,70 @@
       "id": "M001177",
       "name": "Tom McClintock",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-5",
+      "state": "CA-05",
       "chamber": "house"
     },
     {
       "id": "M001143",
       "name": "Betty McCollum",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-4",
+      "state": "MN-04",
       "chamber": "house"
     },
     {
       "id": "M000312",
       "name": "James P. McGovern",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-2",
+      "state": "MA-02",
       "chamber": "house"
     },
     {
       "id": "M001137",
       "name": "Gregory W. Meeks",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-5",
+      "state": "NY-05",
       "chamber": "house"
     },
     {
       "id": "M001160",
       "name": "Gwen Moore",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-4",
+      "state": "WI-04",
       "chamber": "house"
     },
     {
       "id": "N000002",
       "name": "Jerrold Nadler",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-12",
       "chamber": "house"
@@ -664,34 +664,34 @@
       "id": "N000015",
       "name": "Richard E. Neal",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-1",
+      "state": "MA-01",
       "chamber": "house"
     },
     {
       "id": "P000034",
       "name": "Frank Pallone, Jr.",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-6",
+      "state": "NJ-06",
       "chamber": "house"
     },
     {
       "id": "P000197",
       "name": "Nancy Pelosi",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 8
+        "yes": null,
+        "total": null
       },
       "state": "CA-11",
       "chamber": "house"
@@ -700,106 +700,106 @@
       "id": "P000597",
       "name": "Chellie Pingree",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "ME-1",
+      "state": "ME-01",
       "chamber": "house"
     },
     {
       "id": "Q000023",
       "name": "Mike Quigley",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-5",
+      "state": "IL-05",
       "chamber": "house"
     },
     {
       "id": "R000395",
       "name": "Harold Rogers",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KY-5",
+      "state": "KY-05",
       "chamber": "house"
     },
     {
       "id": "R000575",
       "name": "Mike Rogers",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AL-3",
+      "state": "AL-03",
       "chamber": "house"
     },
     {
       "id": "S001176",
       "name": "Steve Scalise",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "LA-1",
+      "state": "LA-01",
       "chamber": "house"
     },
     {
       "id": "S001145",
       "name": "Janice D. Schakowsky",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-9",
+      "state": "IL-09",
       "chamber": "house"
     },
     {
       "id": "S001183",
       "name": "David Schweikert",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-1",
+      "state": "AZ-01",
       "chamber": "house"
     },
     {
       "id": "S001189",
       "name": "Austin Scott",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-8",
+      "state": "GA-08",
       "chamber": "house"
     },
     {
       "id": "S001157",
       "name": "David Scott",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "GA-13",
       "chamber": "house"
@@ -808,34 +808,34 @@
       "id": "S000185",
       "name": "Robert C. \"Bobby\" Scott",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "VA-3",
+      "state": "VA-03",
       "chamber": "house"
     },
     {
       "id": "S001185",
       "name": "Terri A. Sewell",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AL-7",
+      "state": "AL-07",
       "chamber": "house"
     },
     {
       "id": "S000344",
       "name": "Brad Sherman",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-32",
       "chamber": "house"
@@ -844,58 +844,58 @@
       "id": "S001148",
       "name": "Michael K. Simpson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "ID-2",
+      "state": "ID-02",
       "chamber": "house"
     },
     {
       "id": "S000510",
       "name": "Adam Smith",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-9",
+      "state": "WA-09",
       "chamber": "house"
     },
     {
       "id": "S001172",
       "name": "Adrian Smith",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NE-3",
+      "state": "NE-03",
       "chamber": "house"
     },
     {
       "id": "S000522",
       "name": "Christopher H. Smith",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-4",
+      "state": "NJ-04",
       "chamber": "house"
     },
     {
       "id": "S001156",
       "name": "Linda T. Sánchez",
       "party": "Democrat",
-      "alignment": 78,
+      "alignment": null,
       "votes": {
-        "yes": 7,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-38",
       "chamber": "house"
@@ -904,34 +904,34 @@
       "id": "T000193",
       "name": "Bennie G. Thompson",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MS-2",
+      "state": "MS-02",
       "chamber": "house"
     },
     {
       "id": "T000460",
       "name": "Mike Thompson",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-4",
+      "state": "CA-04",
       "chamber": "house"
     },
     {
       "id": "T000467",
       "name": "Glenn Thompson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-15",
       "chamber": "house"
@@ -940,10 +940,10 @@
       "id": "T000469",
       "name": "Paul Tonko",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-20",
       "chamber": "house"
@@ -952,10 +952,10 @@
       "id": "T000463",
       "name": "Michael R. Turner",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "OH-10",
       "chamber": "house"
@@ -964,34 +964,34 @@
       "id": "V000081",
       "name": "Nydia M. Velázquez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-7",
+      "state": "NY-07",
       "chamber": "house"
     },
     {
       "id": "W000798",
       "name": "Tim Walberg",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-5",
+      "state": "MI-05",
       "chamber": "house"
     },
     {
       "id": "W000797",
       "name": "Debbie Wasserman Schultz",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-25",
       "chamber": "house"
@@ -1000,10 +1000,10 @@
       "id": "W000187",
       "name": "Maxine Waters",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-43",
       "chamber": "house"
@@ -1012,10 +1012,10 @@
       "id": "W000806",
       "name": "Daniel Webster",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-11",
       "chamber": "house"
@@ -1024,22 +1024,22 @@
       "id": "W000795",
       "name": "Joe Wilson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SC-2",
+      "state": "SC-02",
       "chamber": "house"
     },
     {
       "id": "W000808",
       "name": "Frederica S. Wilson",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-24",
       "chamber": "house"
@@ -1048,82 +1048,82 @@
       "id": "W000804",
       "name": "Robert J. Wittman",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "VA-1",
+      "state": "VA-01",
       "chamber": "house"
     },
     {
       "id": "W000809",
       "name": "Steve Womack",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AR-3",
+      "state": "AR-03",
       "chamber": "house"
     },
     {
       "id": "A000369",
       "name": "Mark E. Amodei",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NV-2",
+      "state": "NV-02",
       "chamber": "house"
     },
     {
       "id": "B001278",
       "name": "Suzanne Bonamici",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OR-1",
+      "state": "OR-01",
       "chamber": "house"
     },
     {
       "id": "D000617",
       "name": "Suzan K. DelBene",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-1",
+      "state": "WA-01",
       "chamber": "house"
     },
     {
       "id": "M001184",
       "name": "Thomas Massie",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KY-4",
+      "state": "KY-04",
       "chamber": "house"
     },
     {
       "id": "F000454",
       "name": "Bill Foster",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-11",
       "chamber": "house"
@@ -1132,58 +1132,58 @@
       "id": "T000468",
       "name": "Dina Titus",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NV-1",
+      "state": "NV-01",
       "chamber": "house"
     },
     {
       "id": "L000578",
       "name": "Doug LaMalfa",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-1",
+      "state": "CA-01",
       "chamber": "house"
     },
     {
       "id": "H001068",
       "name": "Jared Huffman",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-2",
+      "state": "CA-02",
       "chamber": "house"
     },
     {
       "id": "B001287",
       "name": "Ami Bera",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-6",
+      "state": "CA-06",
       "chamber": "house"
     },
     {
       "id": "S001193",
       "name": "Eric Swalwell",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-14",
       "chamber": "house"
@@ -1192,10 +1192,10 @@
       "id": "B001285",
       "name": "Julia Brownley",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-26",
       "chamber": "house"
@@ -1204,10 +1204,10 @@
       "id": "R000599",
       "name": "Raul Ruiz",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-25",
       "chamber": "house"
@@ -1216,10 +1216,10 @@
       "id": "T000472",
       "name": "Mark Takano",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-39",
       "chamber": "house"
@@ -1228,10 +1228,10 @@
       "id": "V000130",
       "name": "Juan Vargas",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-52",
       "chamber": "house"
@@ -1240,10 +1240,10 @@
       "id": "P000608",
       "name": "Scott H. Peters",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-50",
       "chamber": "house"
@@ -1252,10 +1252,10 @@
       "id": "F000462",
       "name": "Lois Frankel",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-22",
       "chamber": "house"
@@ -1264,82 +1264,82 @@
       "id": "B001282",
       "name": "Andy Barr",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KY-6",
+      "state": "KY-06",
       "chamber": "house"
     },
     {
       "id": "W000812",
       "name": "Ann Wagner",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MO-2",
+      "state": "MO-02",
       "chamber": "house"
     },
     {
       "id": "H001067",
       "name": "Richard Hudson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NC-9",
+      "state": "NC-09",
       "chamber": "house"
     },
     {
       "id": "M001188",
       "name": "Grace Meng",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-6",
+      "state": "NY-06",
       "chamber": "house"
     },
     {
       "id": "J000294",
       "name": "Hakeem S. Jeffries",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-8",
+      "state": "NY-08",
       "chamber": "house"
     },
     {
       "id": "B001281",
       "name": "Joyce Beatty",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OH-3",
+      "state": "OH-03",
       "chamber": "house"
     },
     {
       "id": "J000295",
       "name": "David P. Joyce",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "OH-14",
       "chamber": "house"
@@ -1348,10 +1348,10 @@
       "id": "P000605",
       "name": "Scott Perry",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-10",
       "chamber": "house"
@@ -1360,10 +1360,10 @@
       "id": "W000814",
       "name": "Randy K. Weber, Sr.",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-14",
       "chamber": "house"
@@ -1372,10 +1372,10 @@
       "id": "C001091",
       "name": "Joaquin Castro",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-20",
       "chamber": "house"
@@ -1384,10 +1384,10 @@
       "id": "W000816",
       "name": "Roger Williams",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-25",
       "chamber": "house"
@@ -1396,10 +1396,10 @@
       "id": "V000131",
       "name": "Marc A. Veasey",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-33",
       "chamber": "house"
@@ -1408,70 +1408,70 @@
       "id": "P000607",
       "name": "Mark Pocan",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-2",
+      "state": "WI-02",
       "chamber": "house"
     },
     {
       "id": "K000385",
       "name": "Robin L. Kelly",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-2",
+      "state": "IL-02",
       "chamber": "house"
     },
     {
       "id": "S001195",
       "name": "Jason Smith",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MO-8",
+      "state": "MO-08",
       "chamber": "house"
     },
     {
       "id": "C001101",
       "name": "Katherine M. Clark",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-5",
+      "state": "MA-05",
       "chamber": "house"
     },
     {
       "id": "N000188",
       "name": "Donald Norcross",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-1",
+      "state": "NJ-01",
       "chamber": "house"
     },
     {
       "id": "A000370",
       "name": "Alma S. Adams",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NC-12",
       "chamber": "house"
@@ -1480,46 +1480,46 @@
       "id": "P000609",
       "name": "Gary J. Palmer",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AL-6",
+      "state": "AL-06",
       "chamber": "house"
     },
     {
       "id": "H001072",
       "name": "J. French Hill",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AR-2",
+      "state": "AR-02",
       "chamber": "house"
     },
     {
       "id": "W000821",
       "name": "Bruce Westerman",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AR-4",
+      "state": "AR-04",
       "chamber": "house"
     },
     {
       "id": "D000623",
       "name": "Mark DeSaulnier",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-10",
       "chamber": "house"
@@ -1528,10 +1528,10 @@
       "id": "A000371",
       "name": "Pete Aguilar",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-33",
       "chamber": "house"
@@ -1540,10 +1540,10 @@
       "id": "L000582",
       "name": "Ted Lieu",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-36",
       "chamber": "house"
@@ -1552,10 +1552,10 @@
       "id": "T000474",
       "name": "Norma J. Torres",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-35",
       "chamber": "house"
@@ -1564,22 +1564,22 @@
       "id": "C001103",
       "name": "Earl L. \"Buddy\" Carter",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-1",
+      "state": "GA-01",
       "chamber": "house"
     },
     {
       "id": "L000583",
       "name": "Barry Loudermilk",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "GA-11",
       "chamber": "house"
@@ -1588,10 +1588,10 @@
       "id": "A000372",
       "name": "Rick W. Allen",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "GA-12",
       "chamber": "house"
@@ -1600,10 +1600,10 @@
       "id": "B001295",
       "name": "Mike Bost",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-12",
       "chamber": "house"
@@ -1612,70 +1612,70 @@
       "id": "M001196",
       "name": "Seth Moulton",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-6",
+      "state": "MA-06",
       "chamber": "house"
     },
     {
       "id": "M001194",
       "name": "John R. Moolenaar",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-2",
+      "state": "MI-02",
       "chamber": "house"
     },
     {
       "id": "D000624",
       "name": "Debbie Dingell",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-6",
+      "state": "MI-06",
       "chamber": "house"
     },
     {
       "id": "E000294",
       "name": "Tom Emmer",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-6",
+      "state": "MN-06",
       "chamber": "house"
     },
     {
       "id": "R000603",
       "name": "David Rouzer",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NC-7",
+      "state": "NC-07",
       "chamber": "house"
     },
     {
       "id": "W000822",
       "name": "Bonnie Watson Coleman",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NJ-12",
       "chamber": "house"
@@ -1684,10 +1684,10 @@
       "id": "S001196",
       "name": "Elise M. Stefanik",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-21",
       "chamber": "house"
@@ -1696,22 +1696,22 @@
       "id": "B001296",
       "name": "Brendan F. Boyle",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-2",
+      "state": "PA-02",
       "chamber": "house"
     },
     {
       "id": "B001291",
       "name": "Brian Babin",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-36",
       "chamber": "house"
@@ -1720,58 +1720,58 @@
       "id": "B001292",
       "name": "Donald S. Beyer, Jr.",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "VA-8",
+      "state": "VA-08",
       "chamber": "house"
     },
     {
       "id": "N000189",
       "name": "Dan Newhouse",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-4",
+      "state": "WA-04",
       "chamber": "house"
     },
     {
       "id": "G000576",
       "name": "Glenn Grothman",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-6",
+      "state": "WI-06",
       "chamber": "house"
     },
     {
       "id": "K000388",
       "name": "Trent Kelly",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MS-1",
+      "state": "MS-01",
       "chamber": "house"
     },
     {
       "id": "L000585",
       "name": "Darin LaHood",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-16",
       "chamber": "house"
@@ -1780,46 +1780,46 @@
       "id": "D000626",
       "name": "Warren Davidson",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OH-8",
+      "state": "OH-08",
       "chamber": "house"
     },
     {
       "id": "C001108",
       "name": "James Comer",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KY-1",
+      "state": "KY-01",
       "chamber": "house"
     },
     {
       "id": "E000296",
       "name": "Dwight Evans",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-3",
+      "state": "PA-03",
       "chamber": "house"
     },
     {
       "id": "S001190",
       "name": "Bradley Scott Schneider",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-10",
       "chamber": "house"
@@ -1828,22 +1828,22 @@
       "id": "B001302",
       "name": "Andy Biggs",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-5",
+      "state": "AZ-05",
       "chamber": "house"
     },
     {
       "id": "K000389",
       "name": "Ro Khanna",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-17",
       "chamber": "house"
@@ -1852,10 +1852,10 @@
       "id": "P000613",
       "name": "Jimmy Panetta",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-19",
       "chamber": "house"
@@ -1864,10 +1864,10 @@
       "id": "C001112",
       "name": "Salud O. Carbajal",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-24",
       "chamber": "house"
@@ -1876,10 +1876,10 @@
       "id": "B001300",
       "name": "Nanette Diaz Barragán",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-44",
       "chamber": "house"
@@ -1888,10 +1888,10 @@
       "id": "C001110",
       "name": "J. Luis Correa",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-46",
       "chamber": "house"
@@ -1900,46 +1900,46 @@
       "id": "D000628",
       "name": "Neal P. Dunn",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "FL-2",
+      "state": "FL-02",
       "chamber": "house"
     },
     {
       "id": "R000609",
       "name": "John H. Rutherford",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "FL-5",
+      "state": "FL-05",
       "chamber": "house"
     },
     {
       "id": "S001200",
       "name": "Darren Soto",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "FL-9",
+      "state": "FL-09",
       "chamber": "house"
     },
     {
       "id": "M001199",
       "name": "Brian J. Mast",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-21",
       "chamber": "house"
@@ -1948,94 +1948,94 @@
       "id": "K000391",
       "name": "Raja Krishnamoorthi",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-8",
+      "state": "IL-08",
       "chamber": "house"
     },
     {
       "id": "H001077",
       "name": "Clay Higgins",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "LA-3",
+      "state": "LA-03",
       "chamber": "house"
     },
     {
       "id": "J000299",
       "name": "Mike Johnson",
       "party": "Republican",
-      "alignment": 13,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 8
+        "yes": null,
+        "total": null
       },
-      "state": "LA-4",
+      "state": "LA-04",
       "chamber": "house"
     },
     {
       "id": "R000606",
       "name": "Jamie Raskin",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MD-8",
+      "state": "MD-08",
       "chamber": "house"
     },
     {
       "id": "B001301",
       "name": "Jack Bergman",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-1",
+      "state": "MI-01",
       "chamber": "house"
     },
     {
       "id": "B001298",
       "name": "Don Bacon",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NE-2",
+      "state": "NE-02",
       "chamber": "house"
     },
     {
       "id": "G000583",
       "name": "Josh Gottheimer",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-5",
+      "state": "NJ-05",
       "chamber": "house"
     },
     {
       "id": "E000297",
       "name": "Adriano Espaillat",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-13",
       "chamber": "house"
@@ -2044,22 +2044,22 @@
       "id": "F000466",
       "name": "Brian K. Fitzpatrick",
       "party": "Republican",
-      "alignment": 33,
+      "alignment": null,
       "votes": {
-        "yes": 3,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-1",
+      "state": "PA-01",
       "chamber": "house"
     },
     {
       "id": "S001199",
       "name": "Lloyd Smucker",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-11",
       "chamber": "house"
@@ -2068,22 +2068,22 @@
       "id": "K000392",
       "name": "David Kustoff",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-8",
+      "state": "TN-08",
       "chamber": "house"
     },
     {
       "id": "G000581",
       "name": "Vicente Gonzalez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-34",
       "chamber": "house"
@@ -2092,10 +2092,10 @@
       "id": "A000375",
       "name": "Jodey C. Arrington",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-19",
       "chamber": "house"
@@ -2104,46 +2104,46 @@
       "id": "J000298",
       "name": "Pramila Jayapal",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-7",
+      "state": "WA-07",
       "chamber": "house"
     },
     {
       "id": "E000298",
       "name": "Ron Estes",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KS-4",
+      "state": "KS-04",
       "chamber": "house"
     },
     {
       "id": "N000190",
       "name": "Ralph Norman",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SC-5",
+      "state": "SC-05",
       "chamber": "house"
     },
     {
       "id": "G000585",
       "name": "Jimmy Gomez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-34",
       "chamber": "house"
@@ -2152,10 +2152,10 @@
       "id": "C001115",
       "name": "Michael Cloud",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-27",
       "chamber": "house"
@@ -2164,10 +2164,10 @@
       "id": "B001306",
       "name": "Troy Balderson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "OH-12",
       "chamber": "house"
@@ -2176,22 +2176,22 @@
       "id": "H001082",
       "name": "Kevin Hern",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OK-1",
+      "state": "OK-01",
       "chamber": "house"
     },
     {
       "id": "M001206",
       "name": "Joseph D. Morelle",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-25",
       "chamber": "house"
@@ -2200,70 +2200,70 @@
       "id": "S001205",
       "name": "Mary Gay Scanlon",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-5",
+      "state": "PA-05",
       "chamber": "house"
     },
     {
       "id": "C001055",
       "name": "Ed Case",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "HI-1",
+      "state": "HI-01",
       "chamber": "house"
     },
     {
       "id": "H001066",
       "name": "Steven Horsford",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NV-4",
+      "state": "NV-04",
       "chamber": "house"
     },
     {
       "id": "S001211",
       "name": "Greg Stanton",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-4",
+      "state": "AZ-04",
       "chamber": "house"
     },
     {
       "id": "H001090",
       "name": "Josh Harder",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CA-9",
+      "state": "CA-09",
       "chamber": "house"
     },
     {
       "id": "L000593",
       "name": "Mike Levin",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-49",
       "chamber": "house"
@@ -2272,46 +2272,46 @@
       "id": "N000191",
       "name": "Joe Neguse",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CO-2",
+      "state": "CO-02",
       "chamber": "house"
     },
     {
       "id": "C001121",
       "name": "Jason Crow",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CO-6",
+      "state": "CO-06",
       "chamber": "house"
     },
     {
       "id": "H001081",
       "name": "Jahana Hayes",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CT-5",
+      "state": "CT-05",
       "chamber": "house"
     },
     {
       "id": "S001214",
       "name": "W. Gregory Steube",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-17",
       "chamber": "house"
@@ -2320,58 +2320,58 @@
       "id": "M001208",
       "name": "Lucy McBath",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-6",
+      "state": "GA-06",
       "chamber": "house"
     },
     {
       "id": "F000469",
       "name": "Russ Fulcher",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "ID-1",
+      "state": "ID-01",
       "chamber": "house"
     },
     {
       "id": "G000586",
       "name": "Jesús G. \"Chuy\" García",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-4",
+      "state": "IL-04",
       "chamber": "house"
     },
     {
       "id": "C001117",
       "name": "Sean Casten",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IL-6",
+      "state": "IL-06",
       "chamber": "house"
     },
     {
       "id": "U000040",
       "name": "Lauren Underwood",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-14",
       "chamber": "house"
@@ -2380,58 +2380,58 @@
       "id": "B001307",
       "name": "James R. Baird",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IN-4",
+      "state": "IN-04",
       "chamber": "house"
     },
     {
       "id": "D000629",
       "name": "Sharice Davids",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KS-3",
+      "state": "KS-03",
       "chamber": "house"
     },
     {
       "id": "T000482",
       "name": "Lori Trahan",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-3",
+      "state": "MA-03",
       "chamber": "house"
     },
     {
       "id": "P000617",
       "name": "Ayanna Pressley",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-7",
+      "state": "MA-07",
       "chamber": "house"
     },
     {
       "id": "S001215",
       "name": "Haley M. Stevens",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "MI-11",
       "chamber": "house"
@@ -2440,10 +2440,10 @@
       "id": "T000481",
       "name": "Rashida Tlaib",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "MI-12",
       "chamber": "house"
@@ -2452,82 +2452,82 @@
       "id": "C001119",
       "name": "Angie Craig",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-2",
+      "state": "MN-02",
       "chamber": "house"
     },
     {
       "id": "O000173",
       "name": "Ilhan Omar",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-5",
+      "state": "MN-05",
       "chamber": "house"
     },
     {
       "id": "S001212",
       "name": "Pete Stauber",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-8",
+      "state": "MN-08",
       "chamber": "house"
     },
     {
       "id": "G000591",
       "name": "Michael Guest",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MS-3",
+      "state": "MS-03",
       "chamber": "house"
     },
     {
       "id": "P000614",
       "name": "Chris Pappas",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NH-1",
+      "state": "NH-01",
       "chamber": "house"
     },
     {
       "id": "V000133",
       "name": "Jefferson Van Drew",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-2",
+      "state": "NJ-02",
       "chamber": "house"
     },
     {
       "id": "S001207",
       "name": "Mikie Sherrill",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NJ-11",
       "chamber": "house"
@@ -2536,22 +2536,22 @@
       "id": "L000590",
       "name": "Susie Lee",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NV-3",
+      "state": "NV-03",
       "chamber": "house"
     },
     {
       "id": "O000172",
       "name": "Alexandria Ocasio-Cortez",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-14",
       "chamber": "house"
@@ -2560,46 +2560,46 @@
       "id": "D000631",
       "name": "Madeleine Dean",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-4",
+      "state": "PA-04",
       "chamber": "house"
     },
     {
       "id": "H001085",
       "name": "Chrissy Houlahan",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-6",
+      "state": "PA-06",
       "chamber": "house"
     },
     {
       "id": "M001204",
       "name": "Daniel Meuser",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "PA-9",
+      "state": "PA-09",
       "chamber": "house"
     },
     {
       "id": "J000302",
       "name": "John Joyce",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-13",
       "chamber": "house"
@@ -2608,10 +2608,10 @@
       "id": "R000610",
       "name": "Guy Reschenthaler",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "PA-14",
       "chamber": "house"
@@ -2620,94 +2620,94 @@
       "id": "T000480",
       "name": "William R. Timmons IV",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SC-4",
+      "state": "SC-04",
       "chamber": "house"
     },
     {
       "id": "J000301",
       "name": "Dusty Johnson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SD-0",
+      "state": "SDSD",
       "chamber": "house"
     },
     {
       "id": "B001309",
       "name": "Tim Burchett",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-2",
+      "state": "TN-02",
       "chamber": "house"
     },
     {
       "id": "R000612",
       "name": "John W. Rose",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-6",
+      "state": "TN-06",
       "chamber": "house"
     },
     {
       "id": "C001120",
       "name": "Dan Crenshaw",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TX-2",
+      "state": "TX-02",
       "chamber": "house"
     },
     {
       "id": "G000589",
       "name": "Lance Gooden",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TX-5",
+      "state": "TX-05",
       "chamber": "house"
     },
     {
       "id": "F000468",
       "name": "Lizzie Fletcher",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TX-7",
+      "state": "TX-07",
       "chamber": "house"
     },
     {
       "id": "E000299",
       "name": "Veronica Escobar",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-16",
       "chamber": "house"
@@ -2716,10 +2716,10 @@
       "id": "R000614",
       "name": "Chip Roy",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-21",
       "chamber": "house"
@@ -2728,10 +2728,10 @@
       "id": "G000587",
       "name": "Sylvia R. Garcia",
       "party": "Democrat",
-      "alignment": 89,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-29",
       "chamber": "house"
@@ -2740,106 +2740,106 @@
       "id": "C001118",
       "name": "Ben Cline",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "VA-6",
+      "state": "VA-06",
       "chamber": "house"
     },
     {
       "id": "S001216",
       "name": "Kim Schrier",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WA-8",
+      "state": "WA-08",
       "chamber": "house"
     },
     {
       "id": "S001213",
       "name": "Bryan Steil",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-1",
+      "state": "WI-01",
       "chamber": "house"
     },
     {
       "id": "M001205",
       "name": "Carol D. Miller",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WV-1",
+      "state": "WV-01",
       "chamber": "house"
     },
     {
       "id": "G000592",
       "name": "Jared F. Golden",
       "party": "Democrat",
-      "alignment": 56,
+      "alignment": null,
       "votes": {
-        "yes": 5,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "ME-2",
+      "state": "ME-02",
       "chamber": "house"
     },
     {
       "id": "M001210",
       "name": "Gregory F. Murphy",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NC-3",
+      "state": "NC-03",
       "chamber": "house"
     },
     {
       "id": "M000687",
       "name": "Kweisi Mfume",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MD-7",
+      "state": "MD-07",
       "chamber": "house"
     },
     {
       "id": "T000165",
       "name": "Thomas P. Tiffany",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-7",
+      "state": "WI-07",
       "chamber": "house"
     },
     {
       "id": "I000056",
       "name": "Darrell Issa",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-48",
       "chamber": "house"
@@ -2848,10 +2848,10 @@
       "id": "S000250",
       "name": "Pete Sessions",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-17",
       "chamber": "house"
@@ -2860,10 +2860,10 @@
       "id": "V000129",
       "name": "David G. Valadao",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-22",
       "chamber": "house"
@@ -2872,22 +2872,22 @@
       "id": "M001212",
       "name": "Barry Moore",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "AL-1",
+      "state": "AL-01",
       "chamber": "house"
     },
     {
       "id": "O000019",
       "name": "Jay Obernolte",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-23",
       "chamber": "house"
@@ -2896,10 +2896,10 @@
       "id": "K000397",
       "name": "Young Kim",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-40",
       "chamber": "house"
@@ -2908,10 +2908,10 @@
       "id": "J000305",
       "name": "Sara Jacobs",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "CA-51",
       "chamber": "house"
@@ -2920,34 +2920,34 @@
       "id": "B000825",
       "name": "Lauren Boebert",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "CO-4",
+      "state": "CO-04",
       "chamber": "house"
     },
     {
       "id": "C001039",
       "name": "Kat Cammack",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "FL-3",
+      "state": "FL-03",
       "chamber": "house"
     },
     {
       "id": "F000472",
       "name": "Scott Franklin",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-18",
       "chamber": "house"
@@ -2956,10 +2956,10 @@
       "id": "D000032",
       "name": "Byron Donalds",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-19",
       "chamber": "house"
@@ -2968,10 +2968,10 @@
       "id": "G000593",
       "name": "Carlos A. Gimenez",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-28",
       "chamber": "house"
@@ -2980,10 +2980,10 @@
       "id": "S000168",
       "name": "Maria Elvira Salazar",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "FL-27",
       "chamber": "house"
@@ -2992,34 +2992,34 @@
       "id": "W000788",
       "name": "Nikema Williams",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-5",
+      "state": "GA-05",
       "chamber": "house"
     },
     {
       "id": "C001116",
       "name": "Andrew S. Clyde",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "GA-9",
+      "state": "GA-09",
       "chamber": "house"
     },
     {
       "id": "G000596",
       "name": "Marjorie Taylor Greene",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "GA-14",
       "chamber": "house"
@@ -3028,46 +3028,46 @@
       "id": "H001091",
       "name": "Ashley Hinson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IA-2",
+      "state": "IA-02",
       "chamber": "house"
     },
     {
       "id": "M001215",
       "name": "Mariannette Miller-Meeks",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IA-1",
+      "state": "IA-01",
       "chamber": "house"
     },
     {
       "id": "F000446",
       "name": "Randy Feenstra",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IA-4",
+      "state": "IA-04",
       "chamber": "house"
     },
     {
       "id": "M001211",
       "name": "Mary E. Miller",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "IL-15",
       "chamber": "house"
@@ -3076,118 +3076,118 @@
       "id": "M001214",
       "name": "Frank J. Mrvan",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IN-1",
+      "state": "IN-01",
       "chamber": "house"
     },
     {
       "id": "S000929",
       "name": "Victoria Spartz",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "IN-5",
+      "state": "IN-05",
       "chamber": "house"
     },
     {
       "id": "M000871",
       "name": "Tracey Mann",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "KS-1",
+      "state": "KS-01",
       "chamber": "house"
     },
     {
       "id": "A000148",
       "name": "Jake Auchincloss",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MA-4",
+      "state": "MA-04",
       "chamber": "house"
     },
     {
       "id": "M001136",
       "name": "Lisa C. McClain",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MI-9",
+      "state": "MI-09",
       "chamber": "house"
     },
     {
       "id": "F000470",
       "name": "Michelle Fischbach",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "MN-7",
+      "state": "MN-07",
       "chamber": "house"
     },
     {
       "id": "R000305",
       "name": "Deborah K. Ross",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NC-2",
+      "state": "NC-02",
       "chamber": "house"
     },
     {
       "id": "L000273",
       "name": "Teresa Leger Fernandez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NM-3",
+      "state": "NM-03",
       "chamber": "house"
     },
     {
       "id": "G000597",
       "name": "Andrew R. Garbarino",
       "party": "Republican",
-      "alignment": 22,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "NY-2",
+      "state": "NY-02",
       "chamber": "house"
     },
     {
       "id": "M000317",
       "name": "Nicole Malliotakis",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-11",
       "chamber": "house"
@@ -3196,10 +3196,10 @@
       "id": "T000486",
       "name": "Ritchie Torres",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-15",
       "chamber": "house"
@@ -3208,70 +3208,70 @@
       "id": "B000740",
       "name": "Stephanie I. Bice",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OK-5",
+      "state": "OK-05",
       "chamber": "house"
     },
     {
       "id": "B000668",
       "name": "Cliff Bentz",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "OR-2",
+      "state": "OR-02",
       "chamber": "house"
     },
     {
       "id": "M000194",
       "name": "Nancy Mace",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "SC-1",
+      "state": "SC-01",
       "chamber": "house"
     },
     {
       "id": "H001086",
       "name": "Diana Harshbarger",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TN-1",
+      "state": "TN-01",
       "chamber": "house"
     },
     {
       "id": "F000246",
       "name": "Pat Fallon",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "TX-4",
+      "state": "TX-04",
       "chamber": "house"
     },
     {
       "id": "P000048",
       "name": "August Pfluger",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-11",
       "chamber": "house"
@@ -3280,10 +3280,10 @@
       "id": "J000304",
       "name": "Ronny Jackson",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-13",
       "chamber": "house"
@@ -3292,10 +3292,10 @@
       "id": "N000026",
       "name": "Troy E. Nehls",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-22",
       "chamber": "house"
@@ -3304,10 +3304,10 @@
       "id": "G000594",
       "name": "Tony Gonzales",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-23",
       "chamber": "house"
@@ -3316,10 +3316,10 @@
       "id": "V000134",
       "name": "Beth Van Duyne",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "TX-24",
       "chamber": "house"
@@ -3328,34 +3328,34 @@
       "id": "M001213",
       "name": "Blake D. Moore",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "UT-1",
+      "state": "UT-01",
       "chamber": "house"
     },
     {
       "id": "O000086",
       "name": "Burgess Owens",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "UT-4",
+      "state": "UT-04",
       "chamber": "house"
     },
     {
       "id": "S001159",
       "name": "Marilyn Strickland",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 9,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "WA-10",
       "chamber": "house"
@@ -3364,22 +3364,22 @@
       "id": "F000471",
       "name": "Scott Fitzgerald",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
-      "state": "WI-5",
+      "state": "WI-05",
       "chamber": "house"
     },
     {
       "id": "T000478",
       "name": "Claudia Tenney",
       "party": "Republican",
-      "alignment": 11,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 9
+        "yes": null,
+        "total": null
       },
       "state": "NY-24",
       "chamber": "house"
@@ -3388,58 +3388,58 @@
       "id": "L000595",
       "name": "Julia Letlow",
       "party": "Republican",
-      "alignment": 17,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 6
+        "yes": null,
+        "total": null
       },
-      "state": "LA-5",
+      "state": "LA-05",
       "chamber": "house"
     },
     {
       "id": "C001125",
       "name": "Troy A. Carter",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 6,
-        "total": 6
+        "yes": null,
+        "total": null
       },
-      "state": "LA-2",
+      "state": "LA-02",
       "chamber": "house"
     },
     {
       "id": "S001218",
       "name": "Melanie A. Stansbury",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 6,
-        "total": 6
+        "yes": null,
+        "total": null
       },
-      "state": "NM-1",
+      "state": "NM-01",
       "chamber": "house"
     },
     {
       "id": "E000071",
       "name": "Jake Ellzey",
       "party": "Republican",
-      "alignment": 17,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 6
+        "yes": null,
+        "total": null
       },
-      "state": "TX-6",
+      "state": "TX-06",
       "chamber": "house"
     },
     {
       "id": "B001313",
       "name": "Shontel M. Brown",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 4,
-        "total": 4
+        "yes": null,
+        "total": null
       },
       "state": "OH-11",
       "chamber": "house"
@@ -3448,10 +3448,10 @@
       "id": "C001126",
       "name": "Mike Carey",
       "party": "Republican",
-      "alignment": 25,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 4
+        "yes": null,
+        "total": null
       },
       "state": "OH-15",
       "chamber": "house"
@@ -3460,10 +3460,10 @@
       "id": "C001127",
       "name": "Sheila Cherfilus-McCormick",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 3,
-        "total": 3
+        "yes": null,
+        "total": null
       },
       "state": "FL-20",
       "chamber": "house"
@@ -3472,34 +3472,34 @@
       "id": "F000474",
       "name": "Mike Flood",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NE-1",
+      "state": "NE-01",
       "chamber": "house"
     },
     {
       "id": "F000475",
       "name": "Brad Finstad",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MN-1",
+      "state": "MN-01",
       "chamber": "house"
     },
     {
       "id": "R000579",
       "name": "Patrick Ryan",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "NY-18",
       "chamber": "house"
@@ -3508,82 +3508,82 @@
       "id": "Y000067",
       "name": "Rudy Yakym III",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "IN-2",
+      "state": "IN-02",
       "chamber": "house"
     },
     {
       "id": "Z000018",
       "name": "Ryan K. Zinke",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MT-1",
+      "state": "MT-01",
       "chamber": "house"
     },
     {
       "id": "S001220",
       "name": "Dale W. Strong",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "AL-5",
+      "state": "AL-05",
       "chamber": "house"
     },
     {
       "id": "C001132",
       "name": "Elijah Crane",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-2",
+      "state": "AZ-02",
       "chamber": "house"
     },
     {
       "id": "C001133",
       "name": "Juan Ciscomani",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-6",
+      "state": "AZ-06",
       "chamber": "house"
     },
     {
       "id": "K000401",
       "name": "Kevin Kiley",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "CA-3",
+      "state": "CA-03",
       "chamber": "house"
     },
     {
       "id": "M001225",
       "name": "Kevin Mullin",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "CA-15",
       "chamber": "house"
@@ -3592,10 +3592,10 @@
       "id": "K000400",
       "name": "Sydney Kamlager-Dove",
       "party": "Democrat",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "CA-37",
       "chamber": "house"
@@ -3604,10 +3604,10 @@
       "id": "G000598",
       "name": "Robert Garcia",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "CA-42",
       "chamber": "house"
@@ -3616,46 +3616,46 @@
       "id": "P000620",
       "name": "Brittany Pettersen",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "CO-7",
+      "state": "CO-07",
       "chamber": "house"
     },
     {
       "id": "B001314",
       "name": "Aaron Bean",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "FL-4",
+      "state": "FL-04",
       "chamber": "house"
     },
     {
       "id": "M001216",
       "name": "Cory Mills",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "FL-7",
+      "state": "FL-07",
       "chamber": "house"
     },
     {
       "id": "F000476",
       "name": "Maxwell Frost",
       "party": "Democrat",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "FL-10",
       "chamber": "house"
@@ -3664,10 +3664,10 @@
       "id": "L000596",
       "name": "Anna Paulina Luna",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "FL-13",
       "chamber": "house"
@@ -3676,10 +3676,10 @@
       "id": "L000597",
       "name": "Laurel M. Lee",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "FL-15",
       "chamber": "house"
@@ -3688,10 +3688,10 @@
       "id": "M001217",
       "name": "Jared Moskowitz",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "FL-23",
       "chamber": "house"
@@ -3700,22 +3700,22 @@
       "id": "M001218",
       "name": "Richard McCormick",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "GA-7",
+      "state": "GA-07",
       "chamber": "house"
     },
     {
       "id": "C001129",
       "name": "Mike Collins",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "GA-10",
       "chamber": "house"
@@ -3724,58 +3724,58 @@
       "id": "T000487",
       "name": "Jill N. Tokuda",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "HI-2",
+      "state": "HI-02",
       "chamber": "house"
     },
     {
       "id": "N000193",
       "name": "Zachary Nunn",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "IA-3",
+      "state": "IA-03",
       "chamber": "house"
     },
     {
       "id": "J000309",
       "name": "Jonathan L. Jackson",
       "party": "Democrat",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "IL-1",
+      "state": "IL-01",
       "chamber": "house"
     },
     {
       "id": "R000617",
       "name": "Delia C. Ramirez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "IL-3",
+      "state": "IL-03",
       "chamber": "house"
     },
     {
       "id": "B001315",
       "name": "Nikki Budzinski",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "IL-13",
       "chamber": "house"
@@ -3784,10 +3784,10 @@
       "id": "S001225",
       "name": "Eric Sorensen",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "IL-17",
       "chamber": "house"
@@ -3796,58 +3796,58 @@
       "id": "H001093",
       "name": "Erin Houchin",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "IN-9",
+      "state": "IN-09",
       "chamber": "house"
     },
     {
       "id": "M001220",
       "name": "Morgan McGarvey",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "KY-3",
+      "state": "KY-03",
       "chamber": "house"
     },
     {
       "id": "I000058",
       "name": "Glenn Ivey",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MD-4",
+      "state": "MD-04",
       "chamber": "house"
     },
     {
       "id": "S001221",
       "name": "Hillary J. Scholten",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MI-3",
+      "state": "MI-03",
       "chamber": "house"
     },
     {
       "id": "J000307",
       "name": "John James",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "MI-10",
       "chamber": "house"
@@ -3856,10 +3856,10 @@
       "id": "T000488",
       "name": "Shri Thanedar",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "MI-13",
       "chamber": "house"
@@ -3868,70 +3868,70 @@
       "id": "A000379",
       "name": "Mark Alford",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MO-4",
+      "state": "MO-04",
       "chamber": "house"
     },
     {
       "id": "B001316",
       "name": "Eric Burlison",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MO-7",
+      "state": "MO-07",
       "chamber": "house"
     },
     {
       "id": "E000235",
       "name": "Mike Ezell",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "MS-4",
+      "state": "MS-04",
       "chamber": "house"
     },
     {
       "id": "D000230",
       "name": "Donald G. Davis",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NC-1",
+      "state": "NC-01",
       "chamber": "house"
     },
     {
       "id": "F000477",
       "name": "Valerie P. Foushee",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NC-4",
+      "state": "NC-04",
       "chamber": "house"
     },
     {
       "id": "E000246",
       "name": "Chuck Edwards",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "NC-11",
       "chamber": "house"
@@ -3940,58 +3940,58 @@
       "id": "K000398",
       "name": "Thomas H. Kean, Jr.",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-7",
+      "state": "NJ-07",
       "chamber": "house"
     },
     {
       "id": "M001226",
       "name": "Robert Menendez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-8",
+      "state": "NJ-08",
       "chamber": "house"
     },
     {
       "id": "V000136",
       "name": "Gabe Vasquez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NM-2",
+      "state": "NM-02",
       "chamber": "house"
     },
     {
       "id": "L000598",
       "name": "Nick LaLota",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "NY-1",
+      "state": "NY-01",
       "chamber": "house"
     },
     {
       "id": "G000599",
       "name": "Daniel S. Goldman",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "NY-10",
       "chamber": "house"
@@ -4000,10 +4000,10 @@
       "id": "L000599",
       "name": "Michael Lawler",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "NY-17",
       "chamber": "house"
@@ -4012,10 +4012,10 @@
       "id": "L000600",
       "name": "Nicholas A. Langworthy",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "NY-23",
       "chamber": "house"
@@ -4024,34 +4024,34 @@
       "id": "L000601",
       "name": "Greg Landsman",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "OH-1",
+      "state": "OH-01",
       "chamber": "house"
     },
     {
       "id": "M001222",
       "name": "Max L. Miller",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "OH-7",
+      "state": "OH-07",
       "chamber": "house"
     },
     {
       "id": "S001223",
       "name": "Emilia Strong Sykes",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "OH-13",
       "chamber": "house"
@@ -4060,46 +4060,46 @@
       "id": "B001317",
       "name": "Josh Brecheen",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "OK-2",
+      "state": "OK-02",
       "chamber": "house"
     },
     {
       "id": "H001094",
       "name": "Val T. Hoyle",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "OR-4",
+      "state": "OR-04",
       "chamber": "house"
     },
     {
       "id": "S001226",
       "name": "Andrea Salinas",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "OR-6",
+      "state": "OR-06",
       "chamber": "house"
     },
     {
       "id": "L000602",
       "name": "Summer L. Lee",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "PA-12",
       "chamber": "house"
@@ -4108,10 +4108,10 @@
       "id": "D000530",
       "name": "Christopher R. Deluzio",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "PA-17",
       "chamber": "house"
@@ -4120,82 +4120,82 @@
       "id": "M001223",
       "name": "Seth Magaziner",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "RI-2",
+      "state": "RI-02",
       "chamber": "house"
     },
     {
       "id": "F000478",
       "name": "Russell Fry",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "SC-7",
+      "state": "SC-07",
       "chamber": "house"
     },
     {
       "id": "O000175",
       "name": "Andrew Ogles",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "TN-5",
+      "state": "TN-05",
       "chamber": "house"
     },
     {
       "id": "M001224",
       "name": "Nathaniel Moran",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "TX-1",
+      "state": "TX-01",
       "chamber": "house"
     },
     {
       "id": "S001224",
       "name": "Keith Self",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "TX-3",
+      "state": "TX-03",
       "chamber": "house"
     },
     {
       "id": "L000603",
       "name": "Morgan Luttrell",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "TX-8",
+      "state": "TX-08",
       "chamber": "house"
     },
     {
       "id": "D000594",
       "name": "Monica De La Cruz",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "TX-15",
       "chamber": "house"
@@ -4204,10 +4204,10 @@
       "id": "C001130",
       "name": "Jasmine Crockett",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "TX-30",
       "chamber": "house"
@@ -4216,10 +4216,10 @@
       "id": "C001131",
       "name": "Greg Casar",
       "party": "Democrat",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "TX-35",
       "chamber": "house"
@@ -4228,10 +4228,10 @@
       "id": "H001095",
       "name": "Wesley Hunt",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
       "state": "TX-38",
       "chamber": "house"
@@ -4240,118 +4240,118 @@
       "id": "K000399",
       "name": "Jennifer A. Kiggans",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "VA-2",
+      "state": "VA-02",
       "chamber": "house"
     },
     {
       "id": "B001318",
       "name": "Becca Balint",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "VT-0",
+      "state": "VTVT",
       "chamber": "house"
     },
     {
       "id": "G000600",
       "name": "Marie Gluesenkamp Perez",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "WA-3",
+      "state": "WA-03",
       "chamber": "house"
     },
     {
       "id": "V000135",
       "name": "Derrick Van Orden",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "WI-3",
+      "state": "WI-03",
       "chamber": "house"
     },
     {
       "id": "H001096",
       "name": "Harriet M. Hageman",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "WY-0",
+      "state": "WYWY",
       "chamber": "house"
     },
     {
       "id": "M001227",
       "name": "Jennifer L. McClellan",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "VA-4",
+      "state": "VA-04",
       "chamber": "house"
     },
     {
       "id": "A000380",
       "name": "Gabe Amo",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 2,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "RI-1",
+      "state": "RI-01",
       "chamber": "house"
     },
     {
       "id": "M001228",
       "name": "Celeste Maloy",
       "party": "Republican",
-      "alignment": 50,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 2
+        "yes": null,
+        "total": null
       },
-      "state": "UT-2",
+      "state": "UT-02",
       "chamber": "house"
     },
     {
       "id": "S001201",
       "name": "Thomas R. Suozzi",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 8,
-        "total": 8
+        "yes": null,
+        "total": null
       },
-      "state": "NY-3",
+      "state": "NY-03",
       "chamber": "house"
     },
     {
       "id": "K000402",
       "name": "Timothy M. Kennedy",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 1
+        "yes": null,
+        "total": null
       },
       "state": "NY-26",
       "chamber": "house"
@@ -4360,10 +4360,10 @@
       "id": "F000480",
       "name": "Vince Fong",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 1
+        "yes": null,
+        "total": null
       },
       "state": "CA-20",
       "chamber": "house"
@@ -4372,22 +4372,22 @@
       "id": "R000619",
       "name": "Michael A. Rulli",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 1
+        "yes": null,
+        "total": null
       },
-      "state": "OH-6",
+      "state": "OH-06",
       "chamber": "house"
     },
     {
       "id": "M001229",
       "name": "LaMonica McIver",
       "party": "Democrat",
-      "alignment": 100,
+      "alignment": null,
       "votes": {
-        "yes": 1,
-        "total": 1
+        "yes": null,
+        "total": null
       },
       "state": "NJ-10",
       "chamber": "house"
@@ -4396,46 +4396,46 @@
       "id": "W000829",
       "name": "Tony Wied",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 1
+        "yes": null,
+        "total": null
       },
-      "state": "WI-8",
+      "state": "WI-08",
       "chamber": "house"
     },
     {
       "id": "F000110",
       "name": "Cleo Fields",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "LA-6",
+      "state": "LA-06",
       "chamber": "house"
     },
     {
       "id": "S001188",
       "name": "Marlin A. Stutzman",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "IN-3",
+      "state": "IN-03",
       "chamber": "house"
     },
     {
       "id": "C001123",
       "name": "Gilbert Ray Cisneros, Jr.",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-31",
       "chamber": "house"
@@ -4444,58 +4444,58 @@
       "id": "B001323",
       "name": "Nicholas J. Begich III",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "AK-0",
+      "state": "AKAK",
       "chamber": "house"
     },
     {
       "id": "F000481",
       "name": "Shomari Figures",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "AL-2",
+      "state": "AL-02",
       "chamber": "house"
     },
     {
       "id": "A000381",
       "name": "Yassamin Ansari",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-3",
+      "state": "AZ-03",
       "chamber": "house"
     },
     {
       "id": "H001098",
       "name": "Abraham J. Hamadeh",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-8",
+      "state": "AZ-08",
       "chamber": "house"
     },
     {
       "id": "S001231",
       "name": "Lateefah Simon",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-12",
       "chamber": "house"
@@ -4504,10 +4504,10 @@
       "id": "G000605",
       "name": "Adam Gray",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-13",
       "chamber": "house"
@@ -4516,10 +4516,10 @@
       "id": "L000607",
       "name": "Sam T. Liccardo",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-16",
       "chamber": "house"
@@ -4528,10 +4528,10 @@
       "id": "W000830",
       "name": "George Whitesides",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-27",
       "chamber": "house"
@@ -4540,10 +4540,10 @@
       "id": "R000620",
       "name": "Luz M. Rivas",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-29",
       "chamber": "house"
@@ -4552,10 +4552,10 @@
       "id": "F000483",
       "name": "Laura Friedman",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-30",
       "chamber": "house"
@@ -4564,10 +4564,10 @@
       "id": "T000491",
       "name": "Derek Tran",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-45",
       "chamber": "house"
@@ -4576,10 +4576,10 @@
       "id": "M001241",
       "name": "Dave Min",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA-47",
       "chamber": "house"
@@ -4588,250 +4588,250 @@
       "id": "H001100",
       "name": "Jeff Hurd",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "CO-3",
+      "state": "CO-03",
       "chamber": "house"
     },
     {
       "id": "C001137",
       "name": "Jeff Crank",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "CO-5",
+      "state": "CO-05",
       "chamber": "house"
     },
     {
       "id": "E000300",
       "name": "Gabe Evans",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "CO-8",
+      "state": "CO-08",
       "chamber": "house"
     },
     {
       "id": "M001238",
       "name": "Sarah McBride",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "DE-0",
+      "state": "DEDE",
       "chamber": "house"
     },
     {
       "id": "H001099",
       "name": "Mike Haridopolos",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "FL-8",
+      "state": "FL-08",
       "chamber": "house"
     },
     {
       "id": "J000311",
       "name": "Brian Jack",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "GA-3",
+      "state": "GA-03",
       "chamber": "house"
     },
     {
       "id": "S001229",
       "name": "Jefferson Shreve",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "IN-6",
+      "state": "IN-06",
       "chamber": "house"
     },
     {
       "id": "M001233",
       "name": "Mark B. Messmer",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "IN-8",
+      "state": "IN-08",
       "chamber": "house"
     },
     {
       "id": "S001228",
       "name": "Derek Schmidt",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "KS-2",
+      "state": "KS-02",
       "chamber": "house"
     },
     {
       "id": "O000176",
       "name": "Johnny Olszewski, Jr.",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MD-2",
+      "state": "MD-02",
       "chamber": "house"
     },
     {
       "id": "E000301",
       "name": "Sarah Elfreth",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MD-3",
+      "state": "MD-03",
       "chamber": "house"
     },
     {
       "id": "M001232",
       "name": "April McClain Delaney",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MD-6",
+      "state": "MD-06",
       "chamber": "house"
     },
     {
       "id": "B001321",
       "name": "Tom Barrett",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MI-7",
+      "state": "MI-07",
       "chamber": "house"
     },
     {
       "id": "M001237",
       "name": "Kristen McDonald Rivet",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MI-8",
+      "state": "MI-08",
       "chamber": "house"
     },
     {
       "id": "M001234",
       "name": "Kelly Morrison",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MN-3",
+      "state": "MN-03",
       "chamber": "house"
     },
     {
       "id": "B001324",
       "name": "Wesley Bell",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MO-1",
+      "state": "MO-01",
       "chamber": "house"
     },
     {
       "id": "O000177",
       "name": "Robert F. Onder, Jr.",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MO-3",
+      "state": "MO-03",
       "chamber": "house"
     },
     {
       "id": "D000634",
       "name": "Troy Downing",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "MT-2",
+      "state": "MT-02",
       "chamber": "house"
     },
     {
       "id": "M001240",
       "name": "Addison P. McDowell",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NC-6",
+      "state": "NC-06",
       "chamber": "house"
     },
     {
       "id": "H001102",
       "name": "Mark Harris",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NC-8",
+      "state": "NC-08",
       "chamber": "house"
     },
     {
       "id": "H001101",
       "name": "Pat Harrigan",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NC-10",
       "chamber": "house"
@@ -4840,10 +4840,10 @@
       "id": "K000405",
       "name": "Brad Knott",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NC-13",
       "chamber": "house"
@@ -4852,10 +4852,10 @@
       "id": "M001236",
       "name": "Tim Moore",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NC-14",
       "chamber": "house"
@@ -4864,70 +4864,70 @@
       "id": "F000482",
       "name": "Julie Fedorchak",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "ND-0",
+      "state": "NDND",
       "chamber": "house"
     },
     {
       "id": "G000604",
       "name": "Maggie Goodlander",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NH-2",
+      "state": "NH-02",
       "chamber": "house"
     },
     {
       "id": "C001136",
       "name": "Herbert C. Conaway, Jr.",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-3",
+      "state": "NJ-03",
       "chamber": "house"
     },
     {
       "id": "P000621",
       "name": "Nellie Pou",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NJ-9",
+      "state": "NJ-09",
       "chamber": "house"
     },
     {
       "id": "G000602",
       "name": "Laura Gillen",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "NY-4",
+      "state": "NY-04",
       "chamber": "house"
     },
     {
       "id": "L000606",
       "name": "George Latimer",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NY-16",
       "chamber": "house"
@@ -4936,10 +4936,10 @@
       "id": "R000622",
       "name": "Josh Riley",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NY-19",
       "chamber": "house"
@@ -4948,10 +4948,10 @@
       "id": "M001231",
       "name": "John W. Mannion",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NY-22",
       "chamber": "house"
@@ -4960,82 +4960,82 @@
       "id": "T000490",
       "name": "David J. Taylor",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "OH-2",
+      "state": "OH-02",
       "chamber": "house"
     },
     {
       "id": "D000635",
       "name": "Maxine Dexter",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "OR-3",
+      "state": "OR-03",
       "chamber": "house"
     },
     {
       "id": "B001326",
       "name": "Janelle S. Bynum",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "OR-5",
+      "state": "OR-05",
       "chamber": "house"
     },
     {
       "id": "M001230",
       "name": "Ryan Mackenzie",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "PA-7",
+      "state": "PA-07",
       "chamber": "house"
     },
     {
       "id": "B001327",
       "name": "Robert P. Bresnahan, Jr.",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "PA-8",
+      "state": "PA-08",
       "chamber": "house"
     },
     {
       "id": "B001325",
       "name": "Sheri Biggs",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "SC-3",
+      "state": "SC-03",
       "chamber": "house"
     },
     {
       "id": "G000601",
       "name": "Craig A. Goldman",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TX-12",
       "chamber": "house"
@@ -5044,10 +5044,10 @@
       "id": "G000603",
       "name": "Brandon Gill",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TX-26",
       "chamber": "house"
@@ -5056,10 +5056,10 @@
       "id": "J000310",
       "name": "Julie Johnson",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TX-32",
       "chamber": "house"
@@ -5068,46 +5068,46 @@
       "id": "K000403",
       "name": "Mike Kennedy",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "UT-3",
+      "state": "UT-03",
       "chamber": "house"
     },
     {
       "id": "M001239",
       "name": "John J. McGuire III",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "VA-5",
+      "state": "VA-05",
       "chamber": "house"
     },
     {
       "id": "V000138",
       "name": "Eugene Simon Vindman",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "VA-7",
+      "state": "VA-07",
       "chamber": "house"
     },
     {
       "id": "S001230",
       "name": "Suhas Subramanyam",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VA-10",
       "chamber": "house"
@@ -5116,70 +5116,70 @@
       "id": "B001322",
       "name": "Michael Baumgartner",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "WA-5",
+      "state": "WA-05",
       "chamber": "house"
     },
     {
       "id": "R000621",
       "name": "Emily Randall",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "WA-6",
+      "state": "WA-06",
       "chamber": "house"
     },
     {
       "id": "M001235",
       "name": "Riley M. Moore",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "WV-2",
+      "state": "WV-02",
       "chamber": "house"
     },
     {
       "id": "P000622",
       "name": "Jimmy Patronis",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "FL-1",
+      "state": "FL-01",
       "chamber": "house"
     },
     {
       "id": "F000484",
       "name": "Randy Fine",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "FL-6",
+      "state": "FL-06",
       "chamber": "house"
     },
     {
       "id": "W000831",
       "name": "James R. Walkinshaw",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VA-11",
       "chamber": "house"
@@ -5188,24 +5188,24 @@
       "id": "G000606",
       "name": "Adelita S. Grijalva",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "AZ-7",
+      "state": "AZ-07",
       "chamber": "house"
     },
     {
       "id": "V000139",
       "name": "Matt Van Epps",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
-      "state": "TN-7",
+      "state": "TN-07",
       "chamber": "house"
     }
   ],
@@ -5214,10 +5214,10 @@
       "id": "C000127",
       "name": "Maria Cantwell",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WA",
       "chamber": "senate"
@@ -5226,10 +5226,10 @@
       "id": "K000367",
       "name": "Amy Klobuchar",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MN",
       "chamber": "senate"
@@ -5238,10 +5238,10 @@
       "id": "S000033",
       "name": "Bernard Sanders",
       "party": "Independent",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VT",
       "chamber": "senate"
@@ -5250,10 +5250,10 @@
       "id": "W000802",
       "name": "Sheldon Whitehouse",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "RI",
       "chamber": "senate"
@@ -5262,10 +5262,10 @@
       "id": "B001261",
       "name": "John Barrasso",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WY",
       "chamber": "senate"
@@ -5274,10 +5274,10 @@
       "id": "W000437",
       "name": "Roger F. Wicker",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MS",
       "chamber": "senate"
@@ -5286,10 +5286,10 @@
       "id": "C001035",
       "name": "Susan M. Collins",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ME",
       "chamber": "senate"
@@ -5298,10 +5298,10 @@
       "id": "C001056",
       "name": "John Cornyn",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TX",
       "chamber": "senate"
@@ -5310,10 +5310,10 @@
       "id": "D000563",
       "name": "Richard J. Durbin",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IL",
       "chamber": "senate"
@@ -5322,10 +5322,10 @@
       "id": "G000359",
       "name": "Lindsey Graham",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "SC",
       "chamber": "senate"
@@ -5334,10 +5334,10 @@
       "id": "M000355",
       "name": "Mitch McConnell",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "KY",
       "chamber": "senate"
@@ -5346,10 +5346,10 @@
       "id": "M001176",
       "name": "Jeff Merkley",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OR",
       "chamber": "senate"
@@ -5358,10 +5358,10 @@
       "id": "R000122",
       "name": "Jack Reed",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "RI",
       "chamber": "senate"
@@ -5370,10 +5370,10 @@
       "id": "R000584",
       "name": "James E. Risch",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ID",
       "chamber": "senate"
@@ -5382,10 +5382,10 @@
       "id": "S001181",
       "name": "Jeanne Shaheen",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NH",
       "chamber": "senate"
@@ -5394,10 +5394,10 @@
       "id": "W000805",
       "name": "Mark R. Warner",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VA",
       "chamber": "senate"
@@ -5406,10 +5406,10 @@
       "id": "G000555",
       "name": "Kirsten E. Gillibrand",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NY",
       "chamber": "senate"
@@ -5418,10 +5418,10 @@
       "id": "C001088",
       "name": "Christopher A. Coons",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "DE",
       "chamber": "senate"
@@ -5430,10 +5430,10 @@
       "id": "B001230",
       "name": "Tammy Baldwin",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WI",
       "chamber": "senate"
@@ -5442,10 +5442,10 @@
       "id": "B001267",
       "name": "Michael F. Bennet",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CO",
       "chamber": "senate"
@@ -5454,10 +5454,10 @@
       "id": "B001243",
       "name": "Marsha Blackburn",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TN",
       "chamber": "senate"
@@ -5466,10 +5466,10 @@
       "id": "B001277",
       "name": "Richard Blumenthal",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CT",
       "chamber": "senate"
@@ -5478,10 +5478,10 @@
       "id": "B001236",
       "name": "John Boozman",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AR",
       "chamber": "senate"
@@ -5490,10 +5490,10 @@
       "id": "C001047",
       "name": "Shelley Moore Capito",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WV",
       "chamber": "senate"
@@ -5502,10 +5502,10 @@
       "id": "C001075",
       "name": "Bill Cassidy",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "LA",
       "chamber": "senate"
@@ -5514,10 +5514,10 @@
       "id": "C000880",
       "name": "Mike Crapo",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ID",
       "chamber": "senate"
@@ -5526,10 +5526,10 @@
       "id": "G000386",
       "name": "Chuck Grassley",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IA",
       "chamber": "senate"
@@ -5538,10 +5538,10 @@
       "id": "H001046",
       "name": "Martin Heinrich",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NM",
       "chamber": "senate"
@@ -5550,10 +5550,10 @@
       "id": "H001042",
       "name": "Mazie K. Hirono",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "HI",
       "chamber": "senate"
@@ -5562,10 +5562,10 @@
       "id": "H001061",
       "name": "John Hoeven",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ND",
       "chamber": "senate"
@@ -5574,10 +5574,10 @@
       "id": "J000293",
       "name": "Ron Johnson",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WI",
       "chamber": "senate"
@@ -5586,10 +5586,10 @@
       "id": "L000575",
       "name": "James Lankford",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OK",
       "chamber": "senate"
@@ -5598,10 +5598,10 @@
       "id": "L000577",
       "name": "Mike Lee",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "UT",
       "chamber": "senate"
@@ -5610,10 +5610,10 @@
       "id": "L000570",
       "name": "Ben Ray Luján",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NM",
       "chamber": "senate"
@@ -5622,10 +5622,10 @@
       "id": "M000133",
       "name": "Edward J. Markey",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MA",
       "chamber": "senate"
@@ -5634,10 +5634,10 @@
       "id": "M000934",
       "name": "Jerry Moran",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "KS",
       "chamber": "senate"
@@ -5646,10 +5646,10 @@
       "id": "M001153",
       "name": "Lisa Murkowski",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AK",
       "chamber": "senate"
@@ -5658,10 +5658,10 @@
       "id": "M001169",
       "name": "Christopher Murphy",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CT",
       "chamber": "senate"
@@ -5670,10 +5670,10 @@
       "id": "M001111",
       "name": "Patty Murray",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WA",
       "chamber": "senate"
@@ -5682,10 +5682,10 @@
       "id": "P000603",
       "name": "Rand Paul",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "KY",
       "chamber": "senate"
@@ -5694,10 +5694,10 @@
       "id": "P000595",
       "name": "Gary C. Peters",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MI",
       "chamber": "senate"
@@ -5706,10 +5706,10 @@
       "id": "S001150",
       "name": "Adam B. Schiff",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA",
       "chamber": "senate"
@@ -5718,10 +5718,10 @@
       "id": "S000148",
       "name": "Charles E. Schumer",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NY",
       "chamber": "senate"
@@ -5730,10 +5730,10 @@
       "id": "S001184",
       "name": "Tim Scott",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "SC",
       "chamber": "senate"
@@ -5742,10 +5742,10 @@
       "id": "T000250",
       "name": "John Thune",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "SD",
       "chamber": "senate"
@@ -5754,10 +5754,10 @@
       "id": "V000128",
       "name": "Chris Van Hollen",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MD",
       "chamber": "senate"
@@ -5766,10 +5766,10 @@
       "id": "W000800",
       "name": "Peter Welch",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VT",
       "chamber": "senate"
@@ -5778,10 +5778,10 @@
       "id": "W000779",
       "name": "Ron Wyden",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OR",
       "chamber": "senate"
@@ -5790,10 +5790,10 @@
       "id": "Y000064",
       "name": "Todd Young",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IN",
       "chamber": "senate"
@@ -5802,10 +5802,10 @@
       "id": "S001194",
       "name": "Brian Schatz",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "HI",
       "chamber": "senate"
@@ -5814,10 +5814,10 @@
       "id": "C001095",
       "name": "Tom Cotton",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AR",
       "chamber": "senate"
@@ -5826,10 +5826,10 @@
       "id": "D000622",
       "name": "Tammy Duckworth",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IL",
       "chamber": "senate"
@@ -5838,10 +5838,10 @@
       "id": "W000817",
       "name": "Elizabeth Warren",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MA",
       "chamber": "senate"
@@ -5850,10 +5850,10 @@
       "id": "K000383",
       "name": "Angus S. King, Jr.",
       "party": "Independent",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ME",
       "chamber": "senate"
@@ -5862,10 +5862,10 @@
       "id": "D000618",
       "name": "Steve Daines",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MT",
       "chamber": "senate"
@@ -5874,10 +5874,10 @@
       "id": "C001096",
       "name": "Kevin Cramer",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "ND",
       "chamber": "senate"
@@ -5886,10 +5886,10 @@
       "id": "F000463",
       "name": "Deb Fischer",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NE",
       "chamber": "senate"
@@ -5898,10 +5898,10 @@
       "id": "M001190",
       "name": "Markwayne Mullin",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OK",
       "chamber": "senate"
@@ -5910,10 +5910,10 @@
       "id": "C001098",
       "name": "Ted Cruz",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TX",
       "chamber": "senate"
@@ -5922,10 +5922,10 @@
       "id": "K000384",
       "name": "Tim Kaine",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "VA",
       "chamber": "senate"
@@ -5934,10 +5934,10 @@
       "id": "B001288",
       "name": "Cory A. Booker",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NJ",
       "chamber": "senate"
@@ -5946,10 +5946,10 @@
       "id": "G000574",
       "name": "Ruben Gallego",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AZ",
       "chamber": "senate"
@@ -5958,10 +5958,10 @@
       "id": "S001198",
       "name": "Dan Sullivan",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AK",
       "chamber": "senate"
@@ -5970,10 +5970,10 @@
       "id": "E000295",
       "name": "Joni Ernst",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IA",
       "chamber": "senate"
@@ -5982,10 +5982,10 @@
       "id": "T000476",
       "name": "Thom Tillis",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NC",
       "chamber": "senate"
@@ -5994,10 +5994,10 @@
       "id": "R000605",
       "name": "Mike Rounds",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "SD",
       "chamber": "senate"
@@ -6006,10 +6006,10 @@
       "id": "K000393",
       "name": "John Kennedy",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "LA",
       "chamber": "senate"
@@ -6018,10 +6018,10 @@
       "id": "H001076",
       "name": "Margaret Wood Hassan",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NH",
       "chamber": "senate"
@@ -6030,10 +6030,10 @@
       "id": "C001113",
       "name": "Catherine Cortez Masto",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NV",
       "chamber": "senate"
@@ -6042,10 +6042,10 @@
       "id": "B001303",
       "name": "Lisa Blunt Rochester",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "DE",
       "chamber": "senate"
@@ -6054,10 +6054,10 @@
       "id": "B001299",
       "name": "Jim Banks",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "IN",
       "chamber": "senate"
@@ -6066,10 +6066,10 @@
       "id": "M001198",
       "name": "Roger Marshall",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "KS",
       "chamber": "senate"
@@ -6078,10 +6078,10 @@
       "id": "B001305",
       "name": "Ted Budd",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NC",
       "chamber": "senate"
@@ -6090,10 +6090,10 @@
       "id": "R000608",
       "name": "Jacky Rosen",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NV",
       "chamber": "senate"
@@ -6102,10 +6102,10 @@
       "id": "C001114",
       "name": "John R. Curtis",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "UT",
       "chamber": "senate"
@@ -6114,10 +6114,10 @@
       "id": "S001203",
       "name": "Tina Smith",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MN",
       "chamber": "senate"
@@ -6126,10 +6126,10 @@
       "id": "H001079",
       "name": "Cindy Hyde-Smith",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MS",
       "chamber": "senate"
@@ -6138,10 +6138,10 @@
       "id": "S001208",
       "name": "Elissa Slotkin",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MI",
       "chamber": "senate"
@@ -6150,10 +6150,10 @@
       "id": "K000394",
       "name": "Andy Kim",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NJ",
       "chamber": "senate"
@@ -6162,10 +6162,10 @@
       "id": "S001217",
       "name": "Rick Scott",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "FL",
       "chamber": "senate"
@@ -6174,10 +6174,10 @@
       "id": "H001089",
       "name": "Josh Hawley",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MO",
       "chamber": "senate"
@@ -6186,10 +6186,10 @@
       "id": "K000377",
       "name": "Mark Kelly",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AZ",
       "chamber": "senate"
@@ -6198,10 +6198,10 @@
       "id": "L000571",
       "name": "Cynthia M. Lummis",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WY",
       "chamber": "senate"
@@ -6210,10 +6210,10 @@
       "id": "T000278",
       "name": "Tommy Tuberville",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AL",
       "chamber": "senate"
@@ -6222,10 +6222,10 @@
       "id": "H000273",
       "name": "John W. Hickenlooper",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CO",
       "chamber": "senate"
@@ -6234,10 +6234,10 @@
       "id": "H000601",
       "name": "Bill Hagerty",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "TN",
       "chamber": "senate"
@@ -6246,10 +6246,10 @@
       "id": "P000145",
       "name": "Alex Padilla",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "CA",
       "chamber": "senate"
@@ -6258,10 +6258,10 @@
       "id": "O000174",
       "name": "Jon Ossoff",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "GA",
       "chamber": "senate"
@@ -6270,10 +6270,10 @@
       "id": "W000790",
       "name": "Raphael G. Warnock",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "GA",
       "chamber": "senate"
@@ -6282,10 +6282,10 @@
       "id": "B001319",
       "name": "Katie Boyd Britt",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "AL",
       "chamber": "senate"
@@ -6294,10 +6294,10 @@
       "id": "S001227",
       "name": "Eric Schmitt",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MO",
       "chamber": "senate"
@@ -6306,10 +6306,10 @@
       "id": "F000479",
       "name": "John Fetterman",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "PA",
       "chamber": "senate"
@@ -6318,10 +6318,10 @@
       "id": "R000618",
       "name": "Pete Ricketts",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "NE",
       "chamber": "senate"
@@ -6330,10 +6330,10 @@
       "id": "A000382",
       "name": "Angela D. Alsobrooks",
       "party": "Democrat",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MD",
       "chamber": "senate"
@@ -6342,10 +6342,10 @@
       "id": "S001232",
       "name": "Tim Sheehy",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "MT",
       "chamber": "senate"
@@ -6354,10 +6354,10 @@
       "id": "M001242",
       "name": "Bernie Moreno",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OH",
       "chamber": "senate"
@@ -6366,10 +6366,10 @@
       "id": "M001243",
       "name": "David McCormick",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "PA",
       "chamber": "senate"
@@ -6378,10 +6378,10 @@
       "id": "J000312",
       "name": "James C. Justice",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "WV",
       "chamber": "senate"
@@ -6390,10 +6390,10 @@
       "id": "H001104",
       "name": "Jon Husted",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "OH",
       "chamber": "senate"
@@ -6402,10 +6402,10 @@
       "id": "M001244",
       "name": "Ashley Moody",
       "party": "Republican",
-      "alignment": 0,
+      "alignment": null,
       "votes": {
-        "yes": 0,
-        "total": 0
+        "yes": null,
+        "total": null
       },
       "state": "FL",
       "chamber": "senate"

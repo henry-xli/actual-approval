@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>actualapproval.com</title>
+  <title>Actual Approval</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <header class="top-bar">
       <div class="brand">
         <button class="logo-button" aria-label="Go home">
-          <div class="logo">AA</div>
+          <img src="/images/AA_logo.png" alt="Actual Approval Logo" class="logo" />
         </button>
         <div class="brand-text">
           <div class="brand-name">actualapproval.com</div>
@@ -84,7 +84,7 @@
       <section class="route" data-route="president">
         <div class="section-header">
           <h2>President</h2>
-          <p>Combines popular policy alignment, approval, and issue ratings (economy, inflation, immigration).</p>
+          <p>Combines popular policy alignment, approval, and issue ratings.</p>
         </div>
         <div class="card president-card">
           <div class="card-header">
@@ -93,7 +93,7 @@
                 <h3 id="president-name">Loading…</h3>
                 <span id="president-party" class="party-badge party-r">R</span>
               </div>
-              <div class="subtext" id="president-issue">Economy • Inflation • Immigration</div>
+              <div class="subtext" id="president-issue" style="display: none;">Economy • Inflation • Immigration</div>
             </div>
             <div class="align-block">
               <div class="align-label">Alignment</div>
@@ -101,7 +101,14 @@
               <div class="key-votes" id="president-keyvotes">—/— executive orders</div>
             </div>
           </div>
+          <div class="metrics-statement" style="margin: 1rem 0 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            These are the top 3 issues that got Trump elected:
+          </div>
           <div class="metrics" id="president-metrics">
+            <div class="metric">
+              <div class="metric-label">Overall approval</div>
+              <div class="metric-value" id="president-approval">—</div>
+            </div>
             <div class="metric">
               <div class="metric-label">Economy</div>
               <div class="metric-value" id="president-economy">—</div>
@@ -113,10 +120,6 @@
             <div class="metric">
               <div class="metric-label">Immigration</div>
               <div class="metric-value" id="president-immigration">—</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Overall approval</div>
-              <div class="metric-value" id="president-approval">—</div>
             </div>
           </div>
           <div class="sources" id="president-sources"></div>
@@ -226,11 +229,7 @@
           <ul>
             <li>Congress.gov roll call votes</li>
             <li>Public polling for issue approvals (e.g., RealClearPolling)</li>
-            <li>Gemini-assisted popular policy catalog (&gt;65% support)</li>
           </ul>
-          <div class="note">
-            Pipeline actions are stubbed in this static build; wire server routes and API keys to activate live data.
-          </div>
         </div>
       </section>
     </main>
