@@ -10,7 +10,7 @@
   --success: #4ade80;
   --danger: #f87171;
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
-  --lift-shadow: 0 12px 28px rgba(255, 255, 255, 0.12);
+  --lift-shadow: 0 12px 26px rgba(255, 255, 255, 0.24), 0 0 0 1px rgba(255, 255, 255, 0.32);
   --chrome: rgba(11, 16, 33, 0.9);
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   color: var(--text);
@@ -29,7 +29,7 @@
   --success: #16a34a;
   --danger: #dc2626;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --lift-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --lift-shadow: 0 10px 22px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.14);
   --chrome: rgba(255, 255, 255, 0.92);
   color: var(--text);
   background-color: var(--bg);
@@ -44,6 +44,14 @@ button {
 button:hover {
   transform: translateY(-2px);
   box-shadow: var(--lift-shadow);
+}
+
+.logo-button,
+.logo-button:hover {
+  box-shadow: none;
+}
+[data-theme] .logo-button:hover {
+  box-shadow: none !important;
 }
 
 body {
@@ -85,10 +93,11 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border-radius: 14px;
+  transition: transform 0.18s ease;
 }
 .logo-button .logo { transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease; }
-.logo-button:hover { transform: translateY(-2px); box-shadow: var(--lift-shadow); }
+.logo-button:hover { transform: translateY(-2px); }
 .logo-button:hover .logo { transform: translateY(-1px) scale(1.01); box-shadow: var(--lift-shadow); }
 
 .logo {
@@ -188,7 +197,7 @@ body {
   min-width: 160px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.stat-card:hover { transform: translateY(-1px); box-shadow: 0 6px 10px rgba(0,0,0,0.14); }
+.stat-card:hover { transform: translateY(-1px); box-shadow: var(--lift-shadow); }
 .label { color: var(--muted); font-size: 13px; }
 .value { font-size: 24px; font-weight: 700; margin-top: 6px; }
 
@@ -206,7 +215,7 @@ body {
 .hero-illustration.map { text-align: center; }
 .hero-placeholder-img { width: 100%; height: auto; max-height: 480px; object-fit: contain; border-radius: 12px; border: 1px dashed var(--border); background: var(--panel); }
 .hero-placeholder-img { transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.hero-placeholder-img:hover { transform: translateY(-2px); box-shadow: 0 12px 20px rgba(0,0,0,0.18); }
+.hero-placeholder-img:hover { transform: translateY(-2px); box-shadow: var(--lift-shadow); }
 .hero-map-img { transition: none; box-shadow: none; }
 
 .section-header h2 { margin: 0; font-size: 26px; }
@@ -230,7 +239,7 @@ body {
 
 .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 14px; }
 .metric { background: var(--panel-2); border: 1px solid var(--border); border-radius: 12px; padding: 12px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.metric:hover { transform: translateY(-1px); box-shadow: 0 6px 10px rgba(0,0,0,0.14); }
+.metric:hover { transform: translateY(-1px); box-shadow: var(--lift-shadow); }
 .metric-label { color: var(--muted); font-size: 13px; }
 .metric-value { font-size: 20px; font-weight: 700; }
 
@@ -238,8 +247,8 @@ body {
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
 
-.member-card { padding: 14px; border-radius: 14px; border: 1px solid var(--border); background: var(--panel); box-shadow: var(--shadow); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.member-card:hover { transform: translateY(-1px); box-shadow: 0 6px 10px rgba(0,0,0,0.14), 0 0 0 1px rgba(255,255,255,0.04); }
+.member-card { padding: 14px; border-radius: 14px; border: 1px solid var(--border); background: var(--panel); box-shadow: var(--shadow); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.member-card:hover { transform: translateY(-1px); box-shadow: var(--lift-shadow), 0 0 0 1px rgba(255,255,255,0.06); }
 .member-header { display: flex; justify-content: space-between; align-items: baseline; }
 .member-name { font-weight: 700; }
 .member-role { color: var(--muted); font-size: 13px; }
