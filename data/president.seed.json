@@ -4,9 +4,9 @@
   "alignment": 0.46,
   "approval": 0.45,
   "issues": {
-    "economy": 0.48,
-    "inflation": 0.42,
-    "immigration": 0.47
+    "economy": 0.406,
+    "inflation": 0.36,
+    "immigration": 0.468
   },
   "sources": [
     "https://www.realclearpolitics.com/epolls/other/president_trump_job_approval-6179.html",

@@ -21,9 +21,9 @@ const votingStates = new Set([
 const presidentSources = {
   fteCsv: 'https://raw.githubusercontent.com/fivethirtyeight/trump-approval-data/master/approval_topline.csv',
   general: 'https://www.realclearpolitics.com/epolls/other/president_trump_job_approval-6179.html',
-  economy: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy.html',
-  inflation: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation.html',
-  immigration: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration.html',
+  economy: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy',
+  inflation: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation',
+  immigration: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration',
 };
 const rosterSources = [
   'https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.json',
@@ -108,6 +108,18 @@ async function fetchFteApproval() {
   return parsed[parsed.length - 1].approve / 100;
 }
 
+function extractApprove(html) {
+  // New RCP layout: <p class="text-body-2-bold leading-[1.2rem]">Approve</p></div><p class="...">40.6<sup ...>%</sup></p>
+  const match = html.match(/Approve<\/p><\/div><p[^>]*>([\d.]+)<sup/);
+  if (match) return Number.parseFloat(match[1]) / 100;
+
+  // Fallback for older layout or different pages
+  const oldMatch = html.match(/RCP Average.*?([\d.]+)/s);
+  if (oldMatch) return Number.parseFloat(oldMatch[1]) / 100;
+
+  return null;
+}
+
 async function scrapeApproval(url) {
   const res = await fetch(url, {
     headers: { 'user-agent': 'actualapproval.com scraper (+https://github.com/actualapproval)' },
@@ -137,7 +149,12 @@ async function loadPresident() {
   const offlineMode = process.env.OFFLINE_MODE === '1';
   if (offlineMode) {
     const seeded = (await readPresidentSeed()) || fallbackPresident;
-    const offline = { ...seeded, updatedAt: new Date().toISOString() };
+    const offline = {
+      ...seeded,
+      alignment: null,
+      votes: { yes: 0, total: 0 },
+      updatedAt: new Date().toISOString()
+    };
     await fs.writeFile(presidentCacheFile, JSON.stringify(offline, null, 2));
     return offline;
   }
@@ -153,9 +170,10 @@ async function loadPresident() {
     const president = {
       name: 'Donald J. Trump',
       party: 'R',
-      alignment: approval,
+      alignment: null, // Alignment for President is not yet calculated from EOs
       approval,
       issues: { economy, inflation, immigration },
+      votes: { yes: 0, total: 0 }, // Placeholder for executive orders
       sources: Object.values(presidentSources),
       updatedAt: new Date().toISOString(),
     };
@@ -231,10 +249,10 @@ function parseZipDistrictCsv(text, format = 'auto') {
   const lines = text.trim().split(/\r?\n/);
   const [header, ...rows] = lines;
   const cols = header.split(',').map((c) => c.toLowerCase().trim());
-  
+
   // Detect format: us_districts.csv uses state_abbr,zcta,cd; old format uses zip,state,district
   const isNewFormat = cols.includes('state_abbr') && cols.includes('zcta') && cols.includes('cd');
-  
+
   let iZip, iState, iDistrict;
   if (isNewFormat) {
     iZip = cols.indexOf('zcta');
@@ -245,9 +263,9 @@ function parseZipDistrictCsv(text, format = 'auto') {
     iState = cols.findIndex((c) => c === 'state');
     iDistrict = cols.findIndex((c) => c.includes('district'));
   }
-  
+
   if (iZip === -1 || iState === -1 || iDistrict === -1) throw new Error('zip csv missing columns');
-  
+
   const map = new Map();
   rows.forEach((line) => {
     const parts = line.split(',');

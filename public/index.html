@@ -84,7 +84,7 @@
       <section class="route" data-route="president">
         <div class="section-header">
           <h2>President</h2>
-          <p>Combines popular policy alignment, approval, and issue ratings (economy, inflation, immigration).</p>
+          <p>Combines popular policy alignment, approval, and issue ratings.</p>
         </div>
         <div class="card president-card">
           <div class="card-header">
@@ -93,7 +93,7 @@
                 <h3 id="president-name">Loading…</h3>
                 <span id="president-party" class="party-badge party-r">R</span>
               </div>
-              <div class="subtext" id="president-issue">Economy • Inflation • Immigration</div>
+              <div class="subtext" id="president-issue" style="display: none;">Economy • Inflation • Immigration</div>
             </div>
             <div class="align-block">
               <div class="align-label">Alignment</div>
@@ -101,7 +101,14 @@
               <div class="key-votes" id="president-keyvotes">—/— executive orders</div>
             </div>
           </div>
+          <div class="metrics-statement" style="margin: 1rem 0 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            These are the top 3 issues that got Trump elected:
+          </div>
           <div class="metrics" id="president-metrics">
+            <div class="metric">
+              <div class="metric-label">Overall approval</div>
+              <div class="metric-value" id="president-approval">—</div>
+            </div>
             <div class="metric">
               <div class="metric-label">Economy</div>
               <div class="metric-value" id="president-economy">—</div>
@@ -113,10 +120,6 @@
             <div class="metric">
               <div class="metric-label">Immigration</div>
               <div class="metric-value" id="president-immigration">—</div>
-            </div>
-            <div class="metric">
-              <div class="metric-label">Overall approval</div>
-              <div class="metric-value" id="president-approval">—</div>
             </div>
           </div>
           <div class="sources" id="president-sources"></div>
