@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="See how closely your representatives align with broadly supported policies. Search by name or ZIP code." />
+  <meta name="theme-color" content="#0b1021" />
   <title>Actual Approval</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,15 +34,27 @@
       </div>
     </header>
 
+    <!-- Midterm Countdown Banner -->
+    <div class="countdown-banner" id="countdown-banner">
+      <div class="countdown-content">
+        <div class="countdown-text">
+          <span class="countdown-label">🗳️ Midterm Elections in</span>
+          <span class="countdown-timer" id="countdown-timer">---</span>
+        </div>
+        <a href="https://vote.gov" target="_blank" rel="noreferrer" class="register-btn">Register to Vote</a>
+        <button class="countdown-close" id="countdown-close" aria-label="Dismiss banner">✕</button>
+      </div>
+    </div>
+
     <main id="app">
       <section class="route active" data-route="home">
-        <div class="hero shell">
+        <div class="hero shell fade-in">
           <div class="hero-copy">
             <h1>Do your representatives align with you?</h1>
             <p>Search by name or ZIP to see how closely your representatives align with broadly supported policies.</p>
             <form id="search-form" class="search-form">
               <input type="text" id="input-name" placeholder="Name" aria-label="Name" />
-              <input type="text" id="input-zip" placeholder="ZIP" aria-label="ZIP" />
+              <input type="text" id="input-zip" placeholder="ZIP" aria-label="ZIP" maxlength="5" pattern="[0-9]{5}" />
               <button type="submit">Search</button>
             </form>
             <div id="search-error" class="error-text" aria-live="polite"></div>
@@ -58,7 +72,18 @@
           <img class="hero-map-img" src="/images/political_map.png" alt="political map" />
         </div>
 
-        <section class="bills-section shell" id="bills-section">
+        <!-- Upcoming Bills Alert Section -->
+        <section class="alerts-section shell fade-in-delay" id="alerts-section">
+          <div class="section-header">
+            <h2>🔔 Upcoming High-Support Bills</h2>
+            <p>These bills have 65%+ public support and deserve your attention.</p>
+          </div>
+          <div class="alerts-grid" id="alerts-grid">
+            <div class="alert-placeholder">Loading upcoming bills...</div>
+          </div>
+        </section>
+
+        <section class="bills-section shell fade-in-delay" id="bills-section">
           <div class="section-header">
             <h2>Popular bills tracked</h2>
             <p>High-support legislation the public backs.</p>
@@ -82,11 +107,11 @@
       </section>
 
       <section class="route" data-route="president">
-        <div class="section-header">
+        <div class="section-header fade-in">
           <h2>President</h2>
           <p>Combines popular policy alignment, approval, and issue ratings.</p>
         </div>
-        <div class="card president-card">
+        <div class="card president-card fade-in-delay">
           <div class="card-header">
             <div>
               <div class="president-title">
@@ -96,10 +121,18 @@
               <div class="subtext" id="president-issue" style="display: none;">Economy • Inflation • Immigration</div>
             </div>
             <div class="align-block">
-              <div class="align-label">Alignment</div>
+              <div class="align-label">Overall Alignment</div>
               <div class="align-score" id="president-score">—</div>
+              <div class="align-change" id="president-change"></div>
               <div class="key-votes" id="president-keyvotes">—/— executive orders</div>
             </div>
+          </div>
+          <div class="eo-alignment-block">
+            <div class="eo-label">Executive Order Alignment</div>
+            <div class="eo-bar-container">
+              <div class="eo-bar" id="president-eo-bar" style="width: 0%"></div>
+            </div>
+            <div class="eo-value" id="president-eo-value">—</div>
           </div>
           <div class="metrics-statement" style="margin: 1rem 0 0.5rem; font-size: 0.9rem; opacity: 0.8;">
             These are the top 3 issues that got Trump elected:
@@ -108,6 +141,7 @@
             <div class="metric">
               <div class="metric-label">Overall approval</div>
               <div class="metric-value" id="president-approval">—</div>
+              <div class="metric-change" id="president-approval-change"></div>
             </div>
             <div class="metric">
               <div class="metric-label">Economy</div>
