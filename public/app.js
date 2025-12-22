@@ -80,17 +80,17 @@ const MIDTERM_DATE = new Date('2026-11-03T00:00:00Z');
 function updateCountdown() {
     const now = new Date();
     const diff = MIDTERM_DATE - now;
-    
+
     if (diff <= 0) {
         if (countdownTimer) countdownTimer.textContent = 'Election Day!';
         return;
     }
-    
+
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-    
+
     if (countdownTimer) {
         countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
@@ -126,6 +126,13 @@ function restoreTheme() {
     const saved = localStorage.getItem('aa-theme');
     const start = saved || 'system';
     setTheme(start);
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if (localStorage.getItem('aa-theme') === 'system' || !localStorage.getItem('aa-theme')) {
+            setTheme('system');
+        }
+    });
 }
 themeToggle.addEventListener('change', (e) => {
     const now = Date.now();
@@ -211,15 +218,15 @@ function renderBillsTable() {
 
 function renderAlerts() {
     if (!alertsGrid) return;
-    
+
     // Filter bills with 65%+ support
     const highSupportBills = (state.bills || []).filter(b => b.support_percent >= 65).slice(0, 4);
-    
+
     if (highSupportBills.length === 0) {
         alertsGrid.innerHTML = '<div class="alert-placeholder">No high-support bills found.</div>';
         return;
     }
-    
+
     alertsGrid.innerHTML = highSupportBills.map((bill, index) => `
         <div class="alert-card fade-in" style="animation-delay: ${index * 0.1}s">
             <div class="bill-name">${bill.name || '—'}</div>
@@ -247,7 +254,7 @@ function renderPresident() {
     }
     presidentFields.score.textContent = pct(p.alignment);
     presidentFields.keyvotes.textContent = `${p.votes?.yes ?? '—'}/${p.votes?.total ?? '—'} executive orders`;
-    
+
     // Monthly change indicator (simulated - would come from API in production)
     if (presidentFields.change && p.monthlyChange !== undefined) {
         presidentFields.change.innerHTML = formatChange(p.alignment, p.alignment - p.monthlyChange);
@@ -260,7 +267,7 @@ function renderPresident() {
             presidentFields.change.innerHTML = `<span class="${cssClass}">(${sign}${(demoChange * 100).toFixed(1)}%)</span>`;
         }
     }
-    
+
     // Executive Order Alignment
     const eoAlignment = p.eoAlignment ?? p.alignment ?? 0;
     if (presidentFields.eoBar) {
@@ -271,12 +278,12 @@ function renderPresident() {
     if (presidentFields.eoValue) {
         presidentFields.eoValue.textContent = pct(eoAlignment);
     }
-    
+
     presidentFields.economy.textContent = pct(p.issues?.economy);
     presidentFields.inflation.textContent = pct(p.issues?.inflation);
     presidentFields.immigration.textContent = pct(p.issues?.immigration);
     presidentFields.approval.textContent = pct(p.approval);
-    
+
     // Approval change indicator
     if (presidentFields.approvalChange && p.approvalChange !== undefined) {
         presidentFields.approvalChange.innerHTML = formatChange(p.approval, p.approval - p.approvalChange);
@@ -287,7 +294,7 @@ function renderPresident() {
         const cssClass = demoChange > 0 ? 'change-positive' : demoChange < 0 ? 'change-negative' : 'change-neutral';
         presidentFields.approvalChange.innerHTML = `<span class="${cssClass}">(${sign}${(demoChange * 100).toFixed(1)}% this month)</span>`;
     }
-    
+
     presidentFields.issue.textContent = 'Economy • Inflation • Immigration';
     presidentFields.sources.textContent = p.sources ? `Sources: ${p.sources.join(', ')}` : '';
 }
@@ -520,7 +527,7 @@ function init() {
     statBillsCard?.addEventListener('click', () => {
         billsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-    
+
     // ZIP code input validation - only allow digits
     const zipInputs = document.querySelectorAll('input[placeholder="ZIP"]');
     zipInputs.forEach(input => {
@@ -528,7 +535,7 @@ function init() {
             e.target.value = e.target.value.replace(/\D/g, '').slice(0, 5);
         });
     });
-    
+
     renderSection('house');
     renderSection('senate');
 }

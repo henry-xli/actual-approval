@@ -8,7 +8,9 @@ const fetch = global.fetch;
 
 const app = express();
 const port = process.env.PORT || 3000;
+
 const publicDir = path.join(__dirname, 'public');
+app.use(express.static(publicDir));
 const dataDir = path.join(__dirname, 'data');
 const presidentCacheFile = path.join(dataDir, 'president.json');
 const presidentSeedFile = path.join(dataDir, 'president.seed.json');
@@ -86,9 +88,9 @@ function normalizeDistrictCode(code) {
 // Load ZIP to congressional district mapping
 async function loadZipDistricts() {
   if (zipDistrictCache.loaded) return zipDistrictCache.map;
-  
+
   const map = new Map();
-  
+
   // Try primary file first (us_districts.csv)
   try {
     const raw = await fs.readFile(zipDistrictFile, 'utf-8');
@@ -98,7 +100,7 @@ async function loadZipDistricts() {
     const stateIdx = headers.indexOf('state_abbr');
     const zcIdx = headers.indexOf('zcta');
     const cdIdx = headers.indexOf('cd');
-    
+
     if (stateIdx !== -1 && zcIdx !== -1 && cdIdx !== -1) {
       for (const line of rows) {
         const cols = line.split(',');
@@ -115,7 +117,7 @@ async function loadZipDistricts() {
   } catch (err) {
     if (err.code !== 'ENOENT') console.warn('us_districts.csv load error', err.message || err);
   }
-  
+
   // Fallback to zip-house.csv if primary is empty
   if (map.size === 0) {
     try {
@@ -126,7 +128,7 @@ async function loadZipDistricts() {
       const stateIdx = headers.indexOf('state');
       const zipIdx = headers.indexOf('zip');
       const districtIdx = headers.indexOf('district');
-      
+
       if (stateIdx !== -1 && zipIdx !== -1 && districtIdx !== -1) {
         for (const line of rows) {
           const cols = line.split(',');
@@ -144,7 +146,7 @@ async function loadZipDistricts() {
       if (err.code !== 'ENOENT') console.warn('zip-house.csv load error', err.message || err);
     }
   }
-  
+
   zipDistrictCache = { loaded: true, map };
   return map;
 }
@@ -556,8 +558,6 @@ async function loadData() {
   return { bills, house: houseWithVotes, senate: senateWithVotes, president, stats };
 }
 
-app.use(express.static(publicDir));
-
 app.get('/api/stats', async (_req, res) => {
   try {
     const { stats } = await loadData();
@@ -615,8 +615,8 @@ app.get('/api/bills', async (_req, res) => {
 });
 
 app.get('/api/search', async (req, res) => {
-  const name = (req.query.name || '').trim();
-  const zip = (req.query.zip || '').trim();
+  const name = String(req.query.name || '').trim().substring(0, 100);
+  const zip = String(req.query.zip || '').trim().substring(0, 5);
   try {
     const { house, senate, president } = await loadData();
     let houseResults = [...house];
