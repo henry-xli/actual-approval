@@ -21,11 +21,16 @@ const votingStates = new Set([
   'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
 ]);
 const presidentSources = {
-  fteCsv: 'https://raw.githubusercontent.com/fivethirtyeight/trump-approval-data/master/approval_topline.csv',
-  general: 'https://www.realclearpolitics.com/epolls/other/president_trump_job_approval-6179.html',
+  general: 'https://www.realclearpolling.com/polls/approval/donald-trump/approval-rating',
   economy: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/economy',
   inflation: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation',
   immigration: 'https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration',
+};
+const presidentDataEndpoints = {
+  general: 'https://www.realclearpolitics.com/poll/race/8656/polling_data.json',
+  economy: 'https://www.realclearpolitics.com/poll/race/8666/polling_data.json',
+  inflation: 'https://www.realclearpolitics.com/poll/race/8661/polling_data.json',
+  immigration: 'https://www.realclearpolitics.com/poll/race/8659/polling_data.json',
 };
 const rosterSources = [
   'https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.json',
@@ -195,54 +200,23 @@ async function readCSV(file) {
     });
 }
 
-async function fetchFteApproval() {
-  const res = await fetch(presidentSources.fteCsv, {
-    headers: { 'user-agent': 'actualapproval.com scraper (+https://github.com/actualapproval)' },
-  });
-  if (!res.ok) throw new Error(`fte approval fetch failed ${res.status}`);
-  const csv = await res.text();
-  const lines = csv.trim().split(/\r?\n/);
-  const [headerLine, ...rows] = lines;
-  const headers = headerLine.split(',');
-  const idx = (name) => headers.indexOf(name);
-  const iSubgroup = idx('subgroup');
-  const iApprove = idx('approve_estimate');
-  const iDate = idx('modeldate');
-  if (iSubgroup === -1 || iApprove === -1) throw new Error('fte csv missing columns');
-  const parsed = rows
-    .map((line) => line.split(','))
-    .filter((cols) => (cols[iSubgroup] || '').toLowerCase() === 'all polls')
-    .map((cols) => ({
-      date: cols[iDate],
-      approve: Number.parseFloat(cols[iApprove]),
-    }))
-    .filter((r) => Number.isFinite(r.approve));
-  if (!parsed.length) throw new Error('fte csv empty');
-  parsed.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
-  return parsed[parsed.length - 1].approve / 100;
-}
-
-function extractApprove(html) {
-  // New RCP layout: <p class="text-body-2-bold leading-[1.2rem]">Approve</p></div><p class="...">40.6<sup ...>%</sup></p>
-  const match = html.match(/Approve<\/p><\/div><p[^>]*>([\d.]+)<sup/);
-  if (match) return Number.parseFloat(match[1]) / 100;
-
-  // Fallback for older layout or different pages
-  const oldMatch = html.match(/RCP Average.*?([\d.]+)/s);
-  if (oldMatch) return Number.parseFloat(oldMatch[1]) / 100;
-
-  return null;
-}
-
-async function scrapeApproval(url) {
-  const res = await fetch(url, {
-    headers: { 'user-agent': 'actualapproval.com scraper (+https://github.com/actualapproval)' },
-  });
-  if (!res.ok) throw new Error(`fetch ${url} failed with ${res.status}`);
-  const html = await res.text();
-  const approve = extractApprove(html);
-  if (approve === null) throw new Error(`could not parse approval from ${url}`);
-  return approve;
+async function fetchRcpApproval(url) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'user-agent': 'actualapproval.com scraper (+https://github.com/actualapproval)' },
+    });
+    if (!res.ok) throw new Error(`fetch ${url} failed with ${res.status}`);
+    const data = await res.json();
+    const polls = data.poll || [];
+    const rcpAvg = polls.find(p => p.type === 'rcp_average');
+    if (!rcpAvg) throw new Error(`no rcp_average found in ${url}`);
+    const approve = rcpAvg.candidate.find(c => c.name === 'Approve');
+    if (!approve) throw new Error(`no Approve candidate found in ${url}`);
+    return Number.parseFloat(approve.value) / 100;
+  } catch (err) {
+    console.error(`Error fetching RCP approval from ${url}:`, err.message);
+    return null;
+  }
 }
 
 async function loadPresident() {
@@ -274,12 +248,12 @@ async function loadPresident() {
   }
 
   try {
-    // Prefer stable CSV from FiveThirtyEight; fall back to HTML scrapes for issues.
-    const approval = await fetchFteApproval();
-    const [economy, inflation, immigration] = await Promise.all([
-      scrapeApproval(presidentSources.economy).catch(() => null),
-      scrapeApproval(presidentSources.inflation).catch(() => null),
-      scrapeApproval(presidentSources.immigration).catch(() => null),
+    // Fetch all approval data from RCP JSON endpoints
+    const [approval, economy, inflation, immigration] = await Promise.all([
+      fetchRcpApproval(presidentDataEndpoints.general),
+      fetchRcpApproval(presidentDataEndpoints.economy),
+      fetchRcpApproval(presidentDataEndpoints.inflation),
+      fetchRcpApproval(presidentDataEndpoints.immigration),
     ]);
     const president = {
       name: 'Donald J. Trump',
