@@ -2,9 +2,9 @@
   "name": "Donald J. Trump",
   "party": "R",
   "alignment": null,
-  "approval": 0.43,
+  "approval": 0.431,
   "issues": {
-    "economy": 0.406,
+    "economy": 0.408,
     "inflation": 0.36,
     "immigration": 0.46799999999999997
   },
@@ -18,5 +18,5 @@
     "https://www.realclearpolling.com/polls/approval/donald-trump/issues/inflation",
     "https://www.realclearpolling.com/polls/approval/donald-trump/issues/immigration"
   ],
-  "updatedAt": "2025-12-23T09:48:27.587Z"
+  "updatedAt": "2025-12-27T01:29:12.018Z"
 }
