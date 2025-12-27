@@ -20,5 +20,8 @@
     "helmet": "^8.1.0",
     "yaml": "^2.6.1",
     "zipcodes": "^8.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.54.0"
   }
 }
