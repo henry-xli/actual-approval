@@ -46,12 +46,24 @@ export async function onRequest(context) {
         fetchRcp(presidentDataEndpoints.immigration),
     ]);
 
+    // If fetch failed and we have a cached version, keep using the cached version
+    if (general === null && cached) {
+        return new Response(JSON.stringify(cached), {
+            headers: { 'Content-Type': 'application/json' }
+        });
+    }
+
     const updatedData = {
         name: 'Donald J. Trump',
         party: 'R',
-        alignment: general, // Using general approval as alignment for now
-        approval: general,
-        issues: { economy, inflation, immigration },
+        alignment: general || (cached?.alignment ?? 0.43),
+        approval: general || (cached?.approval ?? 0.43),
+        votes: { yes: 0, total: 0 },
+        issues: {
+            economy: economy || cached?.issues?.economy,
+            inflation: inflation || cached?.issues?.inflation,
+            immigration: immigration || cached?.issues?.immigration
+        },
         updatedAt: new Date().toISOString(),
     };
 

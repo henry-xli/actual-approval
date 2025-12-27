@@ -29,7 +29,19 @@ function parseCSV(raw) {
             }
         }
         cols.push(current.trim());
-        return Object.fromEntries(headers.map((h, idx) => [h, cols[idx] || '']));
+        const obj = Object.fromEntries(headers.map((h, idx) => [h, cols[idx] || '']));
+        
+        // Map popular_bills.csv headers to frontend keys if they exist
+        if (obj['Bill Title'] || obj['Short Description']) {
+            return {
+                ...obj,
+                name: obj.name || obj['Bill Title'],
+                description: obj.description || obj['Short Description'],
+                support_percent: parseInt(obj.support_percent || obj['Public Support %'] || '0'),
+                source: obj.source || obj['Source']
+            };
+        }
+        return obj;
     });
 }
 
@@ -39,9 +51,11 @@ export async function loadRoster(KV) {
     const senateAlign = await getKVData(KV, 'senate_alignment_live.json') || [];
 
     const merge = (list, aligns) => {
-        const alignMap = new Map(aligns.map(a => [a.id, a]));
+        // Normalize IDs to lowercase for matching
+        const alignMap = new Map(aligns.map(a => [String(a.id || '').toLowerCase(), a]));
         return list.map(m => {
-            const a = alignMap.get(m.id) || {};
+            const mId = String(m.id || '').toLowerCase();
+            const a = alignMap.get(mId) || {};
             const yes = Number(a.votes?.yes || 0);
             const total = Number(a.votes?.total || 0);
             return {
