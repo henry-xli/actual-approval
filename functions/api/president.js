@@ -1,14 +1,13 @@
+import { getKVData } from './_data.js';
+
 export async function onRequest(context) {
     const { env } = context;
-    const KV = env.DATA_KV; // Assumes a KV namespace named DATA_KV is bound
+    const KV = env.DATA_KV;
 
     const CACHE_KEY = 'president_data';
     const TTL_HOURS = Number(env.PRESIDENT_CACHE_TTL_HOURS || 6);
 
-    // 1. Try to get from KV
-    const cached = await KV.get(CACHE_KEY, { type: 'json' });
-
-    // In Workers, we can use KV's metadata or just store the timestamp inside the JSON
+    const cached = await getKVData(KV, CACHE_KEY);
     const now = Date.now();
     const isFresh = cached && cached.updatedAt && (now - new Date(cached.updatedAt).getTime() < TTL_HOURS * 60 * 60 * 1000);
 
