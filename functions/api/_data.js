@@ -11,8 +11,12 @@ export async function getKVData(KV, key, type = 'json') {
 }
 
 function parseCSV(raw) {
-    const lines = raw.trim().split(/\r?\n/);
+    // Remove UTF-8 BOM if present
+    const cleanRaw = raw.replace(/^\uFEFF/, '');
+    const lines = cleanRaw.trim().split(/\r?\n/);
     const [headerLine, ...rows] = lines;
+    if (!headerLine) return [];
+
     const headers = headerLine.split(',').map(h => h.trim());
     return rows.map((line) => {
         const cols = [];
@@ -30,15 +34,29 @@ function parseCSV(raw) {
         }
         cols.push(current.trim());
         const obj = Object.fromEntries(headers.map((h, idx) => [h, cols[idx] || '']));
-        
+
         // Map popular_bills.csv headers to frontend keys if they exist
-        if (obj['Bill Title'] || obj['Short Description']) {
+        // Check for both exact match and case-insensitive match
+        const getVal = (keys) => {
+            for (const k of keys) {
+                if (obj[k] !== undefined) return obj[k];
+                // Case-insensitive check
+                const found = Object.keys(obj).find(key => key.toLowerCase() === k.toLowerCase());
+                if (found) return obj[found];
+            }
+            return undefined;
+        };
+
+        const billTitle = getVal(['Bill Title', 'name']);
+        const billDesc = getVal(['Short Description', 'description']);
+
+        if (billTitle || billDesc) {
             return {
                 ...obj,
-                name: obj.name || obj['Bill Title'],
-                description: obj.description || obj['Short Description'],
-                support_percent: parseInt(obj.support_percent || obj['Public Support %'] || '0'),
-                source: obj.source || obj['Source']
+                name: billTitle,
+                description: billDesc,
+                support_percent: parseInt(getVal(['Public Support %', 'support_percent']) || '0'),
+                source: getVal(['Source', 'source'])
             };
         }
         return obj;
@@ -47,20 +65,41 @@ function parseCSV(raw) {
 
 export async function loadRoster(KV) {
     const roster = await getKVData(KV, 'roster.json');
-    const houseAlign = await getKVData(KV, 'house_alignment_live.json') || [];
-    const senateAlign = await getKVData(KV, 'senate_alignment_live.json') || [];
 
-    const merge = (list, aligns) => {
-        // Normalize IDs to lowercase for matching
-        const alignMap = new Map(aligns.map(a => [String(a.id || '').toLowerCase(), a]));
+    // Load both live and static alignment data
+    const [houseLive, houseStatic, senateLive, senateStatic] = await Promise.all([
+        getKVData(KV, 'house_alignment_live.json') || [],
+        getKVData(KV, 'house_alignment.json') || [],
+        getKVData(KV, 'senate_alignment_live.json') || [],
+        getKVData(KV, 'senate_alignment.json') || []
+    ]);
+
+    const merge = (list, live, staticData) => {
+        // Combine live and static alignments, live takes precedence
+        const combinedAligns = [...(staticData || []), ...(live || [])];
+        const alignMap = new Map();
+
+        combinedAligns.forEach(a => {
+            if (!a.id) return;
+            const id = String(a.id).toLowerCase();
+            // If we already have this ID (from live), don't overwrite with static
+            if (!alignMap.has(id) || (a.votes && a.votes.total > 0)) {
+                alignMap.set(id, a);
+            }
+        });
+
         return list.map(m => {
             const mId = String(m.id || '').toLowerCase();
             const a = alignMap.get(mId) || {};
             const yes = Number(a.votes?.yes || 0);
             const total = Number(a.votes?.total || 0);
+
+            // Fallback to top-level alignment if votes are missing (common in static files)
+            const alignment = total > 0 ? yes / total : (Number(a.alignment) || 0);
+
             return {
                 ...m,
-                alignment: total > 0 ? yes / total : 0,
+                alignment,
                 votes: { yes, total },
                 flaggedVotes: a.flaggedVotes || []
             };
@@ -68,7 +107,7 @@ export async function loadRoster(KV) {
     };
 
     return {
-        house: merge(roster?.house || [], houseAlign),
-        senate: merge(roster?.senate || [], senateAlign)
+        house: merge(roster?.house || [], houseLive, houseStatic),
+        senate: merge(roster?.senate || [], senateLive, senateStatic)
     };
 }
