@@ -31,15 +31,18 @@ const countdownBanner = document.getElementById('countdown-banner');
 const countdownClose = document.getElementById('countdown-close');
 const alertsGrid = document.getElementById('alerts-grid');
 
-// Check if banner was dismissed
-if (localStorage.getItem('aa-countdown-dismissed')) {
-    countdownBanner?.classList.add('hidden');
+// Check if banner was dismissed in this session
+if (!sessionStorage.getItem('aa-countdown-dismissed')) {
+    // Show banner after a short delay to make it feel like a popup
+    setTimeout(() => {
+        countdownBanner?.classList.remove('hidden');
+    }, 1500);
 }
 
 // Close button handler
 countdownClose?.addEventListener('click', () => {
     countdownBanner?.classList.add('hidden');
-    localStorage.setItem('aa-countdown-dismissed', '1');
+    sessionStorage.setItem('aa-countdown-dismissed', '1');
 });
 const presidentFields = {
     name: document.getElementById('president-name'),
@@ -92,7 +95,12 @@ function updateCountdown() {
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
     if (countdownTimer) {
-        countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        countdownTimer.innerHTML = `
+            <span class="time-unit">${days}<small>d</small></span>
+            <span class="time-unit">${hours}<small>h</small></span>
+            <span class="time-unit">${minutes}<small>m</small></span>
+            <span class="time-unit">${seconds}<small>s</small></span>
+        `;
     }
 }
 

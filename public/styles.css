@@ -510,6 +510,12 @@ body {
   font-weight: 600;
   position: relative;
   overflow: hidden;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
 }
 
 .countdown-banner::before {
@@ -550,6 +556,21 @@ body {
   padding: 4px 12px;
   border-radius: 8px;
   font-variant-numeric: tabular-nums;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.time-unit {
+  display: flex;
+  align-items: baseline;
+}
+
+.time-unit small {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-left: 1px;
+  font-weight: 500;
 }
 
 .register-btn {
