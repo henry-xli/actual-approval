@@ -31,18 +31,14 @@ const countdownBanner = document.getElementById('countdown-banner');
 const countdownClose = document.getElementById('countdown-close');
 const alertsGrid = document.getElementById('alerts-grid');
 
-// Check if banner was dismissed in this session
-if (!sessionStorage.getItem('aa-countdown-dismissed')) {
-    // Show banner after a short delay to make it feel like a popup
-    setTimeout(() => {
-        countdownBanner?.classList.remove('hidden');
-    }, 1500);
-}
+// Show banner after a short delay to make it feel like a popup
+setTimeout(() => {
+    countdownBanner?.classList.remove('hidden');
+}, 1500);
 
 // Close button handler
 countdownClose?.addEventListener('click', () => {
     countdownBanner?.classList.add('hidden');
-    sessionStorage.setItem('aa-countdown-dismissed', '1');
 });
 const presidentFields = {
     name: document.getElementById('president-name'),
