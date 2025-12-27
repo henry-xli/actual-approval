@@ -11,8 +11,12 @@ export async function getKVData(KV, key, type = 'json') {
 }
 
 function parseCSV(raw) {
-    const lines = raw.trim().split(/\r?\n/);
+    // Remove UTF-8 BOM if present
+    const cleanRaw = raw.replace(/^\uFEFF/, '');
+    const lines = cleanRaw.trim().split(/\r?\n/);
     const [headerLine, ...rows] = lines;
+    if (!headerLine) return [];
+
     const headers = headerLine.split(',').map(h => h.trim());
     return rows.map((line) => {
         const cols = [];
@@ -32,13 +36,27 @@ function parseCSV(raw) {
         const obj = Object.fromEntries(headers.map((h, idx) => [h, cols[idx] || '']));
 
         // Map popular_bills.csv headers to frontend keys if they exist
-        if (obj['Bill Title'] || obj['Short Description']) {
+        // Check for both exact match and case-insensitive match
+        const getVal = (keys) => {
+            for (const k of keys) {
+                if (obj[k] !== undefined) return obj[k];
+                // Case-insensitive check
+                const found = Object.keys(obj).find(key => key.toLowerCase() === k.toLowerCase());
+                if (found) return obj[found];
+            }
+            return undefined;
+        };
+
+        const billTitle = getVal(['Bill Title', 'name']);
+        const billDesc = getVal(['Short Description', 'description']);
+
+        if (billTitle || billDesc) {
             return {
                 ...obj,
-                name: obj.name || obj['Bill Title'],
-                description: obj.description || obj['Short Description'],
-                support_percent: parseInt(obj.support_percent || obj['Public Support %'] || '0'),
-                source: obj.source || obj['Source']
+                name: billTitle,
+                description: billDesc,
+                support_percent: parseInt(getVal(['Public Support %', 'support_percent']) || '0'),
+                source: getVal(['Source', 'source'])
             };
         }
         return obj;
