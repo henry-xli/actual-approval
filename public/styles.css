@@ -514,11 +514,13 @@ body {
 }
 
 [data-theme='light'] .countdown-banner {
-  background: linear-gradient(90deg, #38bdf8 0%, #fbbf24 100%);
+  background: linear-gradient(90deg, #00e5ff 0%, #ffff00 100%);
+  box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
 }
 
 [data-theme='light'] .countdown-timer {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 @keyframes slideDown {
