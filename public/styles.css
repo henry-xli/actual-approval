@@ -513,6 +513,14 @@ body {
   animation: slideDown 0.5s ease-out;
 }
 
+[data-theme='light'] .countdown-banner {
+  background: linear-gradient(90deg, #38bdf8 0%, #fbbf24 100%);
+}
+
+[data-theme='light'] .countdown-timer {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 @keyframes slideDown {
   from { transform: translateY(-100%); }
   to { transform: translateY(0); }
